@@ -1,0 +1,46 @@
+.btn-group {
+  margin-bottom: 30px;
+}
+
+i {
+  line-height: 24px;
+  width: 24px;
+  text-align: center;
+}
+
+.btn {
+  color: $COLOR_WHITE;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: $MAIN_FONT;
+  font-weight: 700;
+  margin: 30px 12px;
+
+  // button colors
+  &.btn__default {
+    background: $COLOR_TEXT;
+    border: 2px solid $COLOR_TEXT;
+  }
+
+  &.btn__icon-only {
+    background: $COLOR_WHITE;
+    border: 2px solid $COLOR_TEXT;
+    border-radius: 50%;
+  }
+
+  &.btn__primary {
+    background: $COLOR_WHITE;
+    border: 2px solid $COLOR_TEXT;
+  }
+
+  &.btn__secondary {
+    background: $COLOR_WHITE;
+    color: $COLOR_TEXT;
+  }
+}
+
+// tags
+.tags {
+  padding: 5px;
+  border-radius: 12px;
+}
