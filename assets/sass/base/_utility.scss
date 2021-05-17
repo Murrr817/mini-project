@@ -1,7 +1,71 @@
-.m-50 {
-  margin: 50px auto;
-}
-
+// display
 .d-flex {
   display: flex;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+// boxes and borders
+.white-border {
+  position: relative;
+  padding: 20px;
+  border: 3px solid $COLOR_WHITE;
+  background: transparent;
+  border-radius: 32px;
+}
+
+.white-filled {
+  position: relative;
+  padding: 10px;
+  background: $COLOR_WHITE;
+  border-radius: 32px;
+}
+
+.icon {
+  background: $COLOR_OLIVE;
+  width: 128px;
+  height: 128px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  margin-top: 100px;
+}
+
+.icon-sm {
+  background: $COLOR_OLIVE;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.icon img {
+  line-height: 64px;
+}
+
+.menu-link {
+  color: $COLOR_YELLOW;
+  font-family: $SECOND_FONT;
+}
+
+.nude-filled {
+  background: $COLOR_NUDE;
+  border-radius: 32px;
+}
+.green-filled {
+  background: $COLOR_GREEN;
+  border-radius: 32px;
+}
+.olive-filled {
+  background: $COLOR_OLIVE;
+  border-radius: 32px;
+}
+.brown-filled {
+  background: $COLOR_BROWN;
+  border-radius: 32px;
 }

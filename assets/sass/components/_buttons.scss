@@ -1,20 +1,17 @@
-.btn-group {
-  margin-bottom: 30px;
-}
-
 i {
   line-height: 24px;
   width: 24px;
   text-align: center;
+  justify-content: center;
 }
 
 .btn {
   color: $COLOR_WHITE;
-  padding: 8px;
-  border-radius: 32px;
-  font-family: $MAIN_FONT;
+  padding: 15px 53px;
+  border-radius: 12px;
+  font-family: $SECOND_FONT;
   font-weight: 700;
-  margin: 30px 12px;
+  margin: 20px auto;
   justify-content: center;
   align-items: center;
 
@@ -28,8 +25,9 @@ i {
     background: $COLOR_WHITE;
     border: 2px solid $COLOR_TEXT;
     border-radius: 50%;
-    color: $COLOR_WHITE;
-    border: 2px solid $COLOR_YELLOW;
+    color: $COLOR_GREEN;
+    width: 48px;
+    height: 48px;
   }
 
   &.btn__green {
