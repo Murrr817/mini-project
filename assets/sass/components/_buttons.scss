@@ -11,31 +11,47 @@ i {
 .btn {
   color: $COLOR_WHITE;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 32px;
   font-family: $MAIN_FONT;
   font-weight: 700;
   margin: 30px 12px;
+  justify-content: center;
+  align-items: center;
 
   // button colors
-  &.btn__default {
-    background: $COLOR_TEXT;
-    border: 2px solid $COLOR_TEXT;
+  &.btn__yellow {
+    background: $COLOR_YELLOW;
+    border: 2px solid $COLOR_YELLOW;
   }
 
   &.btn__icon-only {
     background: $COLOR_WHITE;
     border: 2px solid $COLOR_TEXT;
     border-radius: 50%;
+    color: $COLOR_WHITE;
+    border: 2px solid $COLOR_YELLOW;
   }
 
-  &.btn__primary {
-    background: $COLOR_WHITE;
-    border: 2px solid $COLOR_TEXT;
+  &.btn__green {
+    background: $COLOR_GREEN;
+    border: 2px solid $COLOR_GREEN;
+    border: 2px solid $COLOR_GREEN;
   }
 
-  &.btn__secondary {
-    background: $COLOR_WHITE;
+  &.btn__olive {
+    background: $COLOR_OLIVE;
+    border: 2px solid $COLOR_OLIVE;
+  }
+
+  &.btn__nude {
+    background: $COLOR_NUDE;
+    border: 2px solid $COLOR_NUDE;
+  }
+
+  &.btn__black-border {
+    background: transparent;
     color: $COLOR_TEXT;
+    border: 2px solid $COLOR_TEXT;
   }
 }
 

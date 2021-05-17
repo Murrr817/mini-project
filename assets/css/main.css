@@ -215,6 +215,12 @@ table {
   margin: 50px auto;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   font-family: "David Libre", serif;
   max-width: 1170px;
@@ -446,31 +452,51 @@ i {
 .btn {
   color: #fff;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 32px;
   font-family: "David Libre", serif;
   font-weight: 700;
   margin: 30px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.btn.btn__default {
-  background: #100720;
-  border: 2px solid #100720;
+.btn.btn__yellow {
+  background: #fce28b;
+  border: 2px solid #fce28b;
 }
 
 .btn.btn__icon-only {
   background: #fff;
   border: 2px solid #100720;
   border-radius: 50%;
+  color: #fff;
+  border: 2px solid #fce28b;
 }
 
-.btn.btn__primary {
-  background: #fff;
-  border: 2px solid #100720;
+.btn.btn__green {
+  background: #558065;
+  border: 2px solid #558065;
+  border: 2px solid #558065;
 }
 
-.btn.btn__secondary {
-  background: #fff;
+.btn.btn__olive {
+  background: #6c7154;
+  border: 2px solid #6c7154;
+}
+
+.btn.btn__nude {
+  background: #beb29f;
+  border: 2px solid #beb29f;
+}
+
+.btn.btn__black-border {
+  background: transparent;
   color: #100720;
+  border: 2px solid #100720;
 }
 
 .tags {
@@ -480,5 +506,47 @@ i {
 
 body {
   background-color: #beb29f;
+}
+
+.background-img {
+  height: 1080px;
+  width: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+.container-border {
+  border: 3px solid #fff;
+  background: transparent;
+  border-radius: 32px;
+}
+
+.container-filled {
+  padding: 50px;
+  background: #fff;
+  border-radius: 32px;
+  zoom: -1.5;
+}
+
+.icon {
+  background: #6c7154;
+  width: 128px;
+  height: 128px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 32px;
+}
+
+.icon img {
+  line-height: 64px;
 }
 /*# sourceMappingURL=main.css.map */

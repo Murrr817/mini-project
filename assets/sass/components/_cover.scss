@@ -1,3 +1,41 @@
 body {
   background-color: $COLOR_NUDE;
 }
+
+.background-img {
+  height: 1080px;
+  width: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+.container-border {
+  border: 3px solid $COLOR_WHITE;
+  background: transparent;
+  border-radius: 32px;
+}
+
+.container-filled {
+  padding: 50px;
+  background: $COLOR_WHITE;
+  border-radius: 32px;
+  zoom: -1.5;
+}
+
+.icon {
+  background: $COLOR_OLIVE;
+  width: 128px;
+  height: 128px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+
+.icon img {
+  line-height: 64px;
+}
