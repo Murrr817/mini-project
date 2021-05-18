@@ -22,10 +22,21 @@ i {
   &.btn__icon-only {
     background: $COLOR_WHITE;
     border: 2px solid $COLOR_TEXT;
+    padding: 15px;
     border-radius: 50%;
     color: $COLOR_GREEN;
     width: 48px;
     height: 48px;
+  }
+
+  &.btn__icon-olive {
+    background: $COLOR_OLIVE;
+    border: 2px solid $COLOR_OLIVE;
+    padding: 30px;
+    border-radius: 50%;
+    color: $COLOR_WHITE;
+    width: 92px;
+    height: 92px;
   }
 
   &.btn__green {
@@ -55,4 +66,8 @@ i {
     color: $COLOR_WHITE;
     border: 2px solid $COLOR_WHITE;
   }
+}
+
+.btn__icon-olive i {
+  line-height: 20px;
 }

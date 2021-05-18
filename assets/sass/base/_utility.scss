@@ -3,6 +3,11 @@
   display: flex;
 }
 
+.d-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .d-inline {
   display: inline-block;
 }
@@ -12,8 +17,15 @@
 }
 
 // spacings
+.ac-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .jc-center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -22,14 +34,40 @@
   justify-content: space-between;
 }
 
+// margin
+.margin-btm-10 {
+  margin-bottom: 10px;
+}
+
+// PADDING
+.padding-45-25 {
+  padding: 45px 25px;
+}
+
+.padding-50 {
+  padding: 50px;
+}
+
+.padding-no-right {
+  padding-top: 45px;
+  padding-left: 25px;
+  padding-bottom: 45px;
+}
+
 // boxes and borders
-.white-filled {
+.white-filled-outline {
   background: $COLOR_WHITE;
   border: 5px solid $COLOR_WHITE;
   border-radius: 32px;
   outline: 2px solid $COLOR_WHITE;
   outline-offset: 24px;
   box-shadow: 0 0 3px #ddd;
+}
+
+.white-filled {
+  background: $COLOR_WHITE;
+  border: 5px solid $COLOR_WHITE;
+  border-radius: 32px;
 }
 
 .nude-filled {
@@ -76,4 +114,13 @@
 .menu_link {
   color: $COLOR_YELLOW;
   font-family: $SECOND_FONT;
+}
+
+.classes {
+  height: 352px;
+  color: $COLOR_WHITE;
+}
+
+.classes__row:first-child {
+  margin-bottom: 10px;
 }
