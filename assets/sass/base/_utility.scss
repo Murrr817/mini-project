@@ -7,50 +7,29 @@
   display: inline-block;
 }
 
-// boxes and borders
-.white-border {
-  position: relative;
-  padding: 20px;
-  border: 3px solid $COLOR_WHITE;
-  background: transparent;
-  border-radius: 32px;
+.d-block {
+  display: block;
 }
 
-.white-filled {
-  position: relative;
-  padding: 10px;
-  background: $COLOR_WHITE;
-  border-radius: 32px;
-}
-
-.icon {
-  background: $COLOR_OLIVE;
-  width: 128px;
-  height: 128px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 32px;
-  margin-top: 100px;
-}
-
-.icon-sm {
-  background: $COLOR_OLIVE;
-  width: 64px;
-  height: 64px;
+// spacings
+.jc-center {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  margin-right: 20px;
 }
 
-.icon img {
-  line-height: 64px;
+.jc-space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu-link {
-  color: $COLOR_YELLOW;
-  font-family: $SECOND_FONT;
+// boxes and borders
+.white-filled {
+  background: $COLOR_WHITE;
+  border: 5px solid $COLOR_WHITE;
+  border-radius: 32px;
+  outline: 2px solid $COLOR_WHITE;
+  outline-offset: 24px;
+  box-shadow: 0 0 3px #ddd;
 }
 
 .nude-filled {
@@ -68,4 +47,33 @@
 .brown-filled {
   background: $COLOR_BROWN;
   border-radius: 32px;
+}
+
+.icon {
+  background: $COLOR_OLIVE;
+  width: 128px;
+  height: 128px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+
+.icon img {
+  line-height: 64px;
+}
+
+.icon-sm {
+  background: $COLOR_OLIVE;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.menu_link {
+  color: $COLOR_YELLOW;
+  font-family: $SECOND_FONT;
 }

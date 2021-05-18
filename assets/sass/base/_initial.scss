@@ -2,6 +2,18 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  // smooth anchor scroll
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+
+  // font
+  font-size: 16pt;
+  font-family: "David Libre", serif;
+}
+
+body {
+  background-color: $COLOR_NUDE;
 }
 
 *,
@@ -14,4 +26,10 @@ html {
 
 a {
   text-decoration: none;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+section:not(#section-1) {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }

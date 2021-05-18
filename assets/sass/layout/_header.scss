@@ -1,0 +1,32 @@
+#navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 15px;
+
+  &.navbar--scroll {
+    background: $COLOR_NUDE;
+    box-shadow: 2px 2px 4px $COLOR_TEXT_50;
+  }
+}
+
+.background-img {
+  background-color: $COLOR_NUDE;
+  height: 880px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    max-width: 580px;
+    overflow: hidden;
+  }
+}

@@ -7,14 +7,25 @@
 
 .container-fluid {
   width: 100%;
-  margin: -50px auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+.row .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.column {
   padding: 0 15px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 // @media screen and (min-width: 1200px) {
@@ -69,7 +80,7 @@
 // sm
 @media screen and (min-width: 576px) {
   .container {
-    max-width: auto;
+    max-width: 540px;
   }
 
   .column-sm-1 {
@@ -113,7 +124,7 @@
 // md
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 720px;
   }
 
   .column-md-1 {
@@ -157,7 +168,7 @@
 // lg
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 970px;
+    max-width: 960px;
   }
 
   .column-lg-1 {
@@ -245,7 +256,7 @@
 // xxl
 @media screen and (min-width: 1400px) {
   .container {
-    max-width: 1232px;
+    max-width: 1320px;
   }
 
   .column-xxl-1 {

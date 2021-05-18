@@ -11,9 +11,7 @@ i {
   border-radius: 12px;
   font-family: $SECOND_FONT;
   font-weight: 700;
-  margin: 20px auto;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
 
   // button colors
   &.btn__yellow {
@@ -51,10 +49,10 @@ i {
     color: $COLOR_TEXT;
     border: 2px solid $COLOR_TEXT;
   }
-}
 
-// tags
-.tags {
-  padding: 5px;
-  border-radius: 12px;
+  &.btn__medium {
+    background: transparent;
+    color: $COLOR_WHITE;
+    border: 2px solid $COLOR_WHITE;
+  }
 }
