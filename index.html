@@ -19,21 +19,28 @@
 
     <header id="navbar">
       <div class="nav-container">
-        <nav role='navigation'>
-          <a class="logo h2" href="#">YOGA</a>
-          <div id="menu-toggle">
-            <input type="checkbox" />
-              <span class="ham-menu__item"></span>
-              <span class="ham-menu__item"></span>
-              <span class="ham-menu__item"></span>
+        <div class="nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-header">
+            <div class="nav-title">
+              YOGA
+            </div>
           </div>
-          <ul id="menu" class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="#">ABOUT</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">CLASSES</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">BLOG</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">CONTACT</a></li>
-          </ul>
-        </nav>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          
+          <div class="nav-links">
+            <a href="">ABOUT</a>
+            <a href="">CLASSES</a>
+            <a href="">BLOG</a>
+            <a href="">CONACTS</a>
+          </div>
+        </div>
       </div>
     </header>
      
@@ -218,26 +225,30 @@
           <h2 class="h2 ac-center">Take Your Yoga To The Next Level</h2>
         </div>
         <div class="row">
-          <div class="column column-lg-8 column-sm-12">
+          <div class="column column-lg-8 column-sm-12 p-relative">
             <img src="./assets/img/vid-2.png" alt="media" class="media">
-            <p class="p">45 min</p>
-            <h4 class="h4">Ashtanga Yoga</h4>
-            <a href="" class="btn btn__icon-olive"><i class="fas fa-play"></i></a>
+            <a href="" class="play-btn btn btn__icon-olive"><i class="fas fa-play"></i></a>
+            <div class="row p-relative">
+              <p class="p training__time">45 min</p>
+              <h4 class="h4 training__class">Ashtanga Yoga</h4>
+            </div>
           </div>
 
           <div class="column column-lg-4 column-sm-12 d-column-center">
-            <div class="row">
+            <div class="row p-relative">
               <img src="./assets/img/vid-3.png" alt="media" class="media">
-              <p class="p">30 min</p>
-              <h4 class="h4">Hatha Yoga</h4>
-              <a href="" class="btn btn__icon-olive"><i class="fas fa-play"></i></a>
+              <a href="" class="play-btn btn btn__icon-olive"><i class="fas fa-play"></i></a>
+              <div class="p-relative">
+                <p class="p training__time">30 min</p>
+                <h4 class="h4 training__class">Hatha Yoga</h4>
+              </div>
             </div>
 
-            <div class="row">
+            <div class="row p-relative">
               <img src="./assets/img/vid-4.png" alt="media" class="media">
-              <p class="p">30 min</p>
-              <h4 class="h4">Vinayasa Yoga</h4>
-              <a href="" class="btn btn__icon-olive"><i class="fas fa-play"></i></a>
+              <p class="p training__time">30 min</p>
+              <h4 class="h4 training__class">Vinayasa Yoga</h4>
+              <a href="" class="play-btn btn btn__icon-olive"><i class="fas fa-play"></i></a>
             </div>           
           </div>
         </div>
@@ -316,6 +327,7 @@
           </div>
           <div class="row center">
             <div class="column column-lg-6 column-md-9 column-sm-12 brown-filled padding-45-25">
+              <img src="/assets/img/quote.png" alt="quote" class="quote">
               <div class="row margin-20">
                 <p class="p">"It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text."</p>
               </div>
@@ -331,10 +343,11 @@
             </div>
 
             <div class="column column-lg-6 column-md-9 column-sm-12 brown-filled padding-45-25">
-              <div class="row margin-10">
+              <img src="/assets/img/quote.png" alt="quote" class="quote">
+              <div class="row margin-20">
                 <p class="p">"Which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name."</p>
               </div>
-              <div class="row padding-20">
+              <div class="row padding-10">
                 <div class="column column-lg-2 column-sm-3">
                   <img src="./assets/img/testimonilas.png" alt="quote">
                 </div>
