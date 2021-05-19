@@ -418,17 +418,10 @@ table {
 
 #navbar {
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 0;
   z-index: 1;
 }
 
@@ -440,6 +433,7 @@ table {
 
 .nav {
   position: relative;
+  width: 100%;
 }
 
 .nav > .nav-header {
@@ -462,6 +456,7 @@ table {
   display: inline;
   float: right;
   font-size: 18px;
+  width: 100%;
 }
 
 .nav > .nav-links > a {
@@ -489,19 +484,17 @@ table {
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    width: 80px;
-    height: 80px;
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: #fff;
+    background-color: #fce28b;
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #fff;
   }
   .nav > .nav-links {
     position: absolute;
@@ -523,7 +516,7 @@ table {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: 190px;
     overflow-y: auto;
   }
 }
@@ -848,6 +841,18 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container-contact {
+  border-radius: 32px;
+}
+
+.container-contact > img {
+  vertical-align: middle;
+}
+
+.container-contact > li a {
+  display: inline-block;
 }
 
 i {
