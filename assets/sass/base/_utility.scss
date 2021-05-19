@@ -133,19 +133,6 @@
   border-radius: 32px;
 }
 
-.icon {
-  background: $COLOR_OLIVE;
-  width: 128px;
-  height: 128px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 32px;
-}
-
-.icon img {
-  line-height: 64px;
-}
-
 .menu_link {
   color: $COLOR_YELLOW;
   font-family: $SECOND_FONT;
@@ -157,14 +144,6 @@
   color: $COLOR_WHITE;
 }
 
-.symbol {
-  width: 86px;
-  height: 86px;
-  align-content: center;
-  justify-content: center;
-}
-
-.symbol img {
-  align-self: center;
-  justify-self: center;
+.media__item span {
+  color: $COLOR_TEXT;
 }

@@ -24,6 +24,7 @@
 
 // components
 @import "components/buttons";
+@import "./components/icons";
 // @import "components/carousel";
 @import "components/cover";
 // @import 'components/dropdown';
@@ -39,4 +40,6 @@
 section {
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

@@ -1,0 +1,35 @@
+.icon {
+  background: $COLOR_OLIVE;
+  width: 128px;
+  height: 128px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+
+.icon img {
+  line-height: 64px;
+}
+
+.symbol {
+  width: 86px;
+  height: 86px;
+  align-content: center;
+  justify-content: center;
+}
+
+.symbol img {
+  align-self: center;
+  justify-self: center;
+}
+
+.icon-sm {
+  background: $COLOR_OLIVE;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 20px;
+}
