@@ -1,7 +1,7 @@
 // varaibles
 @import "abstracts/variables";
 // @import "abstracts/functions";
-// @import 'abstracts/mixins';
+@import "abstracts/mixins";
 // @import 'abstracts/placeholders';
 
 // vendors
@@ -15,7 +15,7 @@
 @import "base/utility";
 
 // layout
-// @import "layout/navigation";
+@import "layout/navigation";
 @import "layout/grid";
 @import "layout/header";
 // @import "layout/footer";
@@ -37,6 +37,6 @@
 // @import 'themes/admin';
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

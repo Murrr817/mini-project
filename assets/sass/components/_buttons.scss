@@ -19,26 +19,6 @@ i {
     border: 2px solid $COLOR_YELLOW;
   }
 
-  &.btn__icon-only {
-    background: $COLOR_WHITE;
-    border: 2px solid $COLOR_TEXT;
-    padding: 15px;
-    border-radius: 50%;
-    color: $COLOR_GREEN;
-    width: 48px;
-    height: 48px;
-  }
-
-  &.btn__icon-olive {
-    background: $COLOR_OLIVE;
-    border: 2px solid $COLOR_OLIVE;
-    padding: 30px;
-    border-radius: 50%;
-    color: $COLOR_WHITE;
-    width: 92px;
-    height: 92px;
-  }
-
   &.btn__green {
     background: $COLOR_GREEN;
     border: 2px solid $COLOR_GREEN;
@@ -61,6 +41,27 @@ i {
     border: 2px solid $COLOR_TEXT;
   }
 
+  // icons
+  &.btn__icon-only {
+    background: $COLOR_BROWN;
+    border: 2px solid $COLOR_BROWN;
+    padding: 15px;
+    border-radius: 50%;
+    color: $COLOR_WHITE;
+    width: 48px;
+    height: 48px;
+  }
+
+  &.btn__icon-olive {
+    background: $COLOR_OLIVE;
+    border: 2px solid $COLOR_OLIVE;
+    padding: 30px;
+    border-radius: 50%;
+    color: $COLOR_WHITE;
+    width: 92px;
+    height: 92px;
+  }
+
   &.btn__medium {
     background: transparent;
     color: $COLOR_WHITE;
@@ -70,4 +71,15 @@ i {
 
 .btn__icon-olive i {
   line-height: 20px;
+}
+
+.icon-sm {
+  background: $COLOR_OLIVE;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 20px;
 }

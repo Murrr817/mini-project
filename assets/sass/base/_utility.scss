@@ -3,11 +3,6 @@
   display: flex;
 }
 
-.d-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .d-inline {
   display: inline-block;
 }
@@ -16,10 +11,27 @@
   display: block;
 }
 
+.d-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.d-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.d-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 // spacings
 .ac-center {
   display: flex;
-  flex-wrap: wrap;
   align-content: center;
 }
 
@@ -29,14 +41,40 @@
   justify-content: center;
 }
 
-.jc-space-between {
+.center {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.jc-space-between {
   justify-content: space-between;
 }
 
 // margin
 .margin-btm-10 {
   margin-bottom: 10px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.margin-20 {
+  margin: 20px auto;
+}
+
+.margin-top-btm-50 {
+  margin: 50px auto;
+}
+
+.margin-top-90 {
+  margin-top: 90px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
 }
 
 // PADDING
@@ -48,10 +86,18 @@
   padding: 50px;
 }
 
+.padding-20 {
+  padding: 20px;
+}
+
 .padding-no-right {
   padding-top: 45px;
   padding-left: 25px;
   padding-bottom: 45px;
+}
+
+.padding-top-btm-10 {
+  padding: 10px auto;
 }
 
 // boxes and borders
@@ -61,7 +107,7 @@
   border-radius: 32px;
   outline: 2px solid $COLOR_WHITE;
   outline-offset: 24px;
-  box-shadow: 0 0 3px #ddd;
+  box-shadow: 0 0 3px $COLOR_TEXT_50;
 }
 
 .white-filled {
@@ -100,20 +146,10 @@
   line-height: 64px;
 }
 
-.icon-sm {
-  background: $COLOR_OLIVE;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  margin-right: 20px;
-}
-
 .menu_link {
   color: $COLOR_YELLOW;
   font-family: $SECOND_FONT;
+  margin: 20px auto;
 }
 
 .classes {
@@ -121,6 +157,14 @@
   color: $COLOR_WHITE;
 }
 
-.classes__row:first-child {
-  margin-bottom: 10px;
+.symbol {
+  width: 86px;
+  height: 86px;
+  align-content: center;
+  justify-content: center;
+}
+
+.symbol img {
+  align-self: center;
+  justify-self: center;
 }
