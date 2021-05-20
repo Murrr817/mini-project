@@ -3,6 +3,11 @@
   display: flex;
 }
 
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .d-inline {
   display: inline-block;
 }
@@ -14,7 +19,6 @@
 .d-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .d-column-space-between {
@@ -26,7 +30,7 @@
 .d-column-center {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 // position
@@ -36,13 +40,10 @@
 
 // spacings
 .ac-center {
-  display: flex;
   align-content: center;
 }
 
 .jc-center {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -57,13 +58,39 @@
   justify-content: space-between;
 }
 
-// margin
+// align text
+.ta-center {
+  text-align: center;
+}
+
+// margin btm
 .margin-btm-10 {
   margin-bottom: 10px;
 }
 
-.margin-10 {
-  margin: 10px;
+.margin-btm-15 {
+  margin-bottom: 15px;
+}
+
+.margin-btm-20 {
+  margin-bottom: 20px;
+}
+
+.margin-btm-30 {
+  margin-bottom: 30px;
+}
+
+.margin-btm-45 {
+  margin-bottom: 45px;
+}
+
+// margin top
+.margin-top-90 {
+  margin-top: 90px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
 }
 
 .margin-20 {
@@ -74,12 +101,8 @@
   margin: 50px auto;
 }
 
-.margin-top-90 {
-  margin-top: 90px;
-}
-
-.margin-top-20 {
-  margin-top: 20px;
+.margin-10 {
+  margin: 10px;
 }
 
 // PADDING
@@ -113,6 +136,7 @@
   outline: 2px solid $COLOR_WHITE;
   outline-offset: 24px;
   box-shadow: 0 0 3px $COLOR_TEXT_50;
+  padding: 64px 27px;
 }
 
 .white-filled {
@@ -141,7 +165,7 @@
 .menu_link {
   color: $COLOR_YELLOW;
   font-family: $SECOND_FONT;
-  margin: 20px auto;
+  margin-bottom: 17px;
 }
 
 .classes {

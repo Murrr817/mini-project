@@ -3,6 +3,21 @@
 //   color: $COLOR_TEXT;
 // }
 
+.h1-hero {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.4px;
+  font-weight: 400;
+
+  &.h1-hero--b {
+    font-weight: 700;
+  }
+
+  &.h1-hero--h {
+    font-weight: 900;
+  }
+}
+
 .h1 {
   font-size: 56px;
   line-height: 64px;
