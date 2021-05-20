@@ -1,12 +1,22 @@
 // contact
-.container-contact {
+
+.contact__block {
+  background: url(.././img/background.png);
   border-radius: 32px;
+  padding: 28px;
 }
 
-.container-contact > img {
-  vertical-align: middle;
+#footer {
+  padding-top: 110px;
 }
 
-.container-contact > li a {
-  display: inline-block;
+.border {
+  padding-top: 64px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    padding-top: 77px;
+  }
 }

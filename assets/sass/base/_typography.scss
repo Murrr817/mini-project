@@ -3,19 +3,104 @@
 //   color: $COLOR_TEXT;
 // }
 
-.h1-hero {
+// .t-nav {
+//   font-family: $SECOND_FONT;
+//   font-size: 56px;
+//   line-height: 64px;
+//   letter-spacing: -1.4px;
+//   font-weight: 400;
+
+//   &.h1-hero--b {
+//     font-weight: 700;
+//   }
+
+//   &.h1-hero--h {
+//     font-weight: 900;
+//   }
+// }
+
+.t-nav {
+  font-family: $SECOND_FONT;
+  color: $COLOR_WHITE;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.t-menu-link {
+  font-family: $SECOND_FONT;
+  color: $COLOR_YELLOW;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.t-hero-title {
+  font-family: $MAIN_FONT;
+  color: $COLOR_WHITE;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: -1.4px;
+  font-weight: 700;
+}
+
+.t-sec-title {
+  font-family: $MAIN_FONT;
+  color: $COLOR_TEXT;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+}
+
+.t-caption {
+  font-family: $SECOND_FONT;
+  color: $COLOR_TEXT;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 400;
+}
 
-  &.h1-hero--b {
-    font-weight: 700;
-  }
+.t-content {
+  font-family: $SECOND_FONT;
+  color: $COLOR_TEXT_50;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
 
-  &.h1-hero--h {
-    font-weight: 900;
-  }
+.t-label {
+  font-family: $MAIN_FONT;
+  color: $COLOR_TEXT;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.t-tag {
+  font-family: $SECOND_FONT;
+  color: $COLOR_WHITE;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.t-text {
+  font-family: $SECOND_FONT;
+  color: $COLOR_WHITE;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.t-footer {
+  font-family: $SECOND_FONT;
+  color: $COLOR_GREEN;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 .h1 {

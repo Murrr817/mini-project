@@ -4,10 +4,10 @@
   &:after {
     content: "";
     position: absolute;
-    top: 330px;
+    top: 360px;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 78%;
     background-color: $COLOR_WHITE;
     z-index: -10;
   }
@@ -19,14 +19,22 @@
   padding-top: 115px;
 }
 
-.about__box,
-.media__box {
-  align-items: center;
+.about__text {
+  max-width: 570px;
+}
+
+.about__img img {
+  max-width: 506px;
+}
+
+.about__text-title {
+  max-width: 430px;
 }
 
 // CLASSES
 #classes {
   padding-top: 155px;
+  color: $COLOR_WHITE;
 }
 
 .classes__item {
@@ -36,7 +44,7 @@
 }
 
 .classes_title {
-  max-width: 395px;
+  max-width: 450px;
   position: initial;
   text-align: center;
 }
@@ -59,13 +67,25 @@
   color: $COLOR_TEXT;
 }
 
+.media__text {
+  max-width: 470px;
+}
+
+.media__text-title {
+  max-width: 325px;
+}
+
+.media__img img {
+  max-width: 570px;
+}
+
 // training
 #training {
   padding-top: 140px;
 }
 
 .training_title {
-  max-width: 350px;
+  max-width: 410px;
   position: initial;
   text-align: center;
   padding-bottom: 53px;
@@ -86,7 +106,7 @@
 }
 
 .instructor_title {
-  min-width: 290px;
+  max-width: 350px;
   text-align: left;
   padding-bottom: 50px;
 }
@@ -105,30 +125,90 @@
   padding-top: -16px;
 }
 
+.instructor__block-name {
+  color: $COLOR_TEXT;
+}
+
+// hiring
+#hiring {
+  padding-top: 136px;
+}
+
+.hiring__block {
+  padding: 60px 28px;
+}
+
+// testimonials
+#testimonials {
+  padding-top: 156px;
+}
+
+.testimonial_title {
+  max-width: 395px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.testimonial__block {
+  padding: 38px;
+}
+
+.testimonial__text {
+  padding-top: 10px;
+}
+
+.testimonials__text-quote {
+  max-width: 485px;
+  align-items: center;
+}
+
+// blog
+#blog {
+  padding-top: 124px;
+}
+
+.blog_title {
+  max-width: 330px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.blog__block {
+  max-width: 370px;
+}
+
+.blog__block-title {
+  color: $COLOR_TEXT;
+}
+
+.blog_btn {
+  margin-top: 65px;
+}
+
+// contact
+#contact {
+  padding-top: 145px;
+}
+
 // media scren
+
+@media (min-width: 576px) {
+  .discount__item-text {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #about,
   #media {
     padding-top: 145px;
   }
 
-  .about__img {
-    max-width: 505px;
-  }
-
-  .about__text {
-    max-width: 570px;
-  }
-
-  .media__text {
-    max-width: 470px;
-  }
-
-  .media__img {
-    max-width: 570px;
-  }
-
   .discount__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding: 60px 68px;
   }
 
@@ -136,6 +216,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
 
   .discount__item-img {
@@ -147,7 +228,72 @@
   }
 
   .instructor_title {
-    text-align: left;
     padding-bottom: 60px;
+  }
+
+  #hiring {
+    padding-top: 116px;
+  }
+
+  .hiring__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+  }
+
+  .hiring__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hiring__item-img {
+    margin-right: 45px;
+  }
+
+  #testimonials {
+    padding-top: 92px;
+  }
+
+  .instructor_title {
+    padding-bottom: 63px;
+  }
+
+  .testimonial__block {
+    padding: 48px;
+  }
+
+  #blog {
+    padding-top: 60px;
+  }
+
+  .blog_title {
+    margin-bottom: 63px;
+  }
+
+  #contact {
+    padding-top: 85px;
+  }
+
+  // TYPOGRAPHY
+  .t-hero-title {
+    font-family: $MAIN_FONT;
+    color: $COLOR_WHITE;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    font-weight: 700;
+  }
+
+  .t-sec-title {
+    font-family: $MAIN_FONT;
+    color: $COLOR_TEXT;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1.4px;
+    font-weight: 700;
   }
 }

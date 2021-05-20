@@ -1,3 +1,4 @@
+// SHOWCASE
 .icon {
   background: $COLOR_OLIVE;
   width: 128px;
@@ -8,9 +9,10 @@
 }
 
 .icon img {
-  line-height: 64px;
+  width: 64px;
 }
 
+// DISCOUNT & HIRING
 .symbol {
   width: 86px;
   height: 86px;
@@ -21,6 +23,7 @@
 .symbol img {
   align-self: center;
   justify-self: center;
+  width: 71px;
 }
 
 .icon-sm {
@@ -68,4 +71,6 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 48px;
+  height: 36px;
 }

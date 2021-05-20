@@ -27,6 +27,10 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 html,
 body,
 div,
@@ -158,19 +162,88 @@ table {
   border-spacing: 0;
 }
 
-.h1-hero {
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -1.4px;
+.t-nav {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
   font-weight: 400;
 }
 
-.h1-hero.h1-hero--b {
+.t-menu-link {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #fce28b;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.t-hero-title {
+  font-family: "David Libre", serif;
+  color: #fff;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.4px;
   font-weight: 700;
 }
 
-.h1-hero.h1-hero--h {
-  font-weight: 900;
+.t-sec-title {
+  font-family: "David Libre", serif;
+  color: #100720;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+}
+
+.t-caption {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #100720;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.t-content {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #817c89;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.t-label {
+  font-family: "David Libre", serif;
+  color: #100720;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.t-tag {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.t-text {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.t-footer {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #558065;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 .h1 {
@@ -367,8 +440,16 @@ table {
   margin-top: 80px;
 }
 
+.margin-top-65 {
+  margin-top: 65px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
 }
 
 .margin-top-20 {
@@ -385,6 +466,10 @@ table {
 
 .margin-10 {
   margin: 10px;
+}
+
+.margin-right-25 {
+  margin-right: 25px;
 }
 
 .padding-45-25 {
@@ -847,10 +932,10 @@ table {
 .fluid-bg:after {
   content: "";
   position: absolute;
-  top: 330px;
+  top: 360px;
   left: 0;
   width: 100%;
-  height: 75%;
+  height: 78%;
   background-color: #fff;
   z-index: -10;
 }
@@ -860,15 +945,21 @@ table {
   padding-top: 115px;
 }
 
-.about__box,
-.media__box {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__text {
+  max-width: 570px;
+}
+
+.about__img img {
+  max-width: 506px;
+}
+
+.about__text-title {
+  max-width: 430px;
 }
 
 #classes {
   padding-top: 155px;
+  color: #fff;
 }
 
 .classes__item {
@@ -878,7 +969,7 @@ table {
 }
 
 .classes_title {
-  max-width: 395px;
+  max-width: 450px;
   position: initial;
   text-align: center;
 }
@@ -899,12 +990,24 @@ table {
   color: #100720;
 }
 
+.media__text {
+  max-width: 470px;
+}
+
+.media__text-title {
+  max-width: 325px;
+}
+
+.media__img img {
+  max-width: 570px;
+}
+
 #training {
   padding-top: 140px;
 }
 
 .training_title {
-  max-width: 350px;
+  max-width: 410px;
   position: initial;
   text-align: center;
   padding-bottom: 53px;
@@ -924,7 +1027,7 @@ table {
 }
 
 .instructor_title {
-  min-width: 290px;
+  max-width: 350px;
   text-align: left;
   padding-bottom: 50px;
 }
@@ -945,24 +1048,92 @@ table {
   padding-top: -16px;
 }
 
+.instructor__block-name {
+  color: #100720;
+}
+
+#hiring {
+  padding-top: 136px;
+}
+
+.hiring__block {
+  padding: 60px 28px;
+}
+
+#testimonials {
+  padding-top: 156px;
+}
+
+.testimonial_title {
+  max-width: 395px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.testimonial__block {
+  padding: 38px;
+}
+
+.testimonial__text {
+  padding-top: 10px;
+}
+
+.testimonials__text-quote {
+  max-width: 485px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog {
+  padding-top: 124px;
+}
+
+.blog_title {
+  max-width: 330px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.blog__block {
+  max-width: 370px;
+}
+
+.blog__block-title {
+  color: #100720;
+}
+
+.blog_btn {
+  margin-top: 65px;
+}
+
+#contact {
+  padding-top: 145px;
+}
+
+@media (min-width: 576px) {
+  .discount__item-text {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #about,
   #media {
     padding-top: 145px;
   }
-  .about__img {
-    max-width: 505px;
-  }
-  .about__text {
-    max-width: 570px;
-  }
-  .media__text {
-    max-width: 470px;
-  }
-  .media__img {
-    max-width: 570px;
-  }
   .discount__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 60px 68px;
   }
   .discount__item {
@@ -974,6 +1145,9 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .discount__item-img {
     margin-right: 45px;
@@ -982,21 +1156,96 @@ table {
     padding-bottom: 63px;
   }
   .instructor_title {
-    text-align: left;
     padding-bottom: 60px;
+  }
+  #hiring {
+    padding-top: 116px;
+  }
+  .hiring__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px;
+  }
+  .hiring__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hiring__item-img {
+    margin-right: 45px;
+  }
+  #testimonials {
+    padding-top: 92px;
+  }
+  .instructor_title {
+    padding-bottom: 63px;
+  }
+  .testimonial__block {
+    padding: 48px;
+  }
+  #blog {
+    padding-top: 60px;
+  }
+  .blog_title {
+    margin-bottom: 63px;
+  }
+  #contact {
+    padding-top: 85px;
+  }
+  .t-hero-title {
+    font-family: "David Libre", serif;
+    color: #fff;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    font-weight: 700;
+  }
+  .t-sec-title {
+    font-family: "David Libre", serif;
+    color: #100720;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1.4px;
+    font-weight: 700;
   }
 }
 
-.container-contact {
+.contact__block {
+  background: url(.././img/background.png);
   border-radius: 32px;
+  padding: 28px;
 }
 
-.container-contact > img {
-  vertical-align: middle;
+#footer {
+  padding-top: 110px;
 }
 
-.container-contact > li a {
-  display: inline-block;
+.border {
+  padding-top: 64px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    padding-top: 77px;
+  }
 }
 
 i {
@@ -1013,6 +1262,8 @@ i {
   padding: 15px 53px;
   border-radius: 12px;
   font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  line-height: 14.5px;
   font-weight: 700;
   margin-top: 50px;
 }
@@ -1088,7 +1339,7 @@ i {
 }
 
 .icon img {
-  line-height: 64px;
+  width: 64px;
 }
 
 .symbol {
@@ -1107,6 +1358,7 @@ i {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  width: 71px;
 }
 
 .icon-sm {
@@ -1158,6 +1410,8 @@ i {
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 48px;
+  height: 36px;
 }
 
 #hero {
