@@ -35,19 +35,29 @@
 }
 
 // training
-.play-btn {
+.training__vid i {
+  width: 25px;
+  height: 20px;
+}
+
+.training__vid {
+  position: relative;
+  overflow: hidden;
+}
+
+.training__vid > .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.training__class {
+.training__vid > .training__class {
   position: absolute;
   bottom: 15%;
   left: 10%;
 }
 
-.training__time {
+.training__vid > .training__time {
   position: absolute;
   bottom: 30%;
   left: 10%;

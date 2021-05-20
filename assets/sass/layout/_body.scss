@@ -1,0 +1,153 @@
+.fluid-bg {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: $COLOR_WHITE;
+    z-index: -10;
+  }
+}
+
+// ABOUT SECTION
+#about,
+#media {
+  padding-top: 115px;
+}
+
+.about__box,
+.media__box {
+  align-items: center;
+}
+
+// CLASSES
+#classes {
+  padding-top: 155px;
+}
+
+.classes__item {
+  color: $COLOR_WHITE;
+  padding: 45px 0;
+  padding-left: 28px;
+}
+
+.classes_title {
+  max-width: 395px;
+  position: initial;
+  text-align: center;
+}
+
+// DISCOUNT
+#discount {
+  padding-top: 115px;
+}
+
+.discount__block {
+  padding: 60px 28px;
+}
+
+// media
+#media {
+  padding-top: 145px;
+}
+
+.media__btn span {
+  color: $COLOR_TEXT;
+}
+
+// training
+#training {
+  padding-top: 140px;
+}
+
+.training_title {
+  max-width: 350px;
+  position: initial;
+  text-align: center;
+  padding-bottom: 53px;
+}
+
+.training__vid-1 img {
+  max-width: 770px;
+}
+
+.training__vid-2,
+.training__vid-3 {
+  max-width: 370px;
+}
+
+// instructor
+#instructors {
+  padding-top: 125px;
+}
+
+.instructor_title {
+  min-width: 290px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.instructor__block {
+  width: 270px;
+  height: 336px;
+  justify-content: center;
+  padding-top: -16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.instructor__img {
+  padding-top: -16px;
+}
+
+// media scren
+@media screen and (min-width: 768px) {
+  #about,
+  #media {
+    padding-top: 145px;
+  }
+
+  .about__img {
+    max-width: 505px;
+  }
+
+  .about__text {
+    max-width: 570px;
+  }
+
+  .media__text {
+    max-width: 470px;
+  }
+
+  .media__img {
+    max-width: 570px;
+  }
+
+  .discount__block {
+    padding: 60px 68px;
+  }
+
+  .discount__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .discount__item-img {
+    margin-right: 45px;
+  }
+
+  .training_title {
+    padding-bottom: 63px;
+  }
+
+  .instructor_title {
+    text-align: left;
+    padding-bottom: 60px;
+  }
+}
