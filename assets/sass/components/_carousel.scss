@@ -2,6 +2,7 @@
   min-height: 420px;
   height: 100%;
   position: relative;
+  padding-top: 20px;
 }
 
 .carousel__item {
@@ -18,3 +19,6 @@
 // .instructor__img {
 //   position: absolute;
 // }
+.flickity-viewport {
+  overflow: visible;
+}
