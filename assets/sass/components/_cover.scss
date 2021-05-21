@@ -1,0 +1,87 @@
+// ABSOLUTE WHITE BACKGROUND
+.bg-white {
+  position: relative;
+  background-color: $COLOR_WHITE;
+  border: 1px solid $COLOR_WHITE;
+}
+
+.white::after {
+  background: $COLOR_WHITE;
+  border: 1px solid $COLOR_WHITE;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+#about .container,
+#hiring .container,
+#contact .container,
+#discount .container {
+  z-index: 2;
+}
+
+.nude::after {
+  background: $COLOR_WHITE;
+  border: 1px solid $COLOR_WHITE;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+// ABSOLUTE TRAINING
+.training__vid {
+  position: relative;
+  overflow: hidden;
+}
+
+.training__vid > .play-btn {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+
+.training__vid > .training__class {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  transform: translate(-20%, 10%);
+}
+
+.training__vid > .training__time {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  transform: translate(-40%, 10%);
+}
+
+@media screen and (min-width: 992px) {
+  .training__vid > .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .training__vid > .training__class {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    transform: translate(-5%, -10%);
+  }
+
+  .training__vid > .training__time {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    transform: translate(-12%, -10%);
+  }
+}

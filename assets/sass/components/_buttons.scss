@@ -1,6 +1,5 @@
 i {
   line-height: 24px;
-  width: 24px;
   text-align: center;
   justify-content: center;
 }
@@ -23,7 +22,6 @@ i {
 
   &.btn__green {
     background: $COLOR_GREEN;
-    border: 2px solid $COLOR_GREEN;
     border: 2px solid $COLOR_GREEN;
   }
 
@@ -60,8 +58,6 @@ i {
     padding: 30px;
     border-radius: 50%;
     color: $COLOR_WHITE;
-    width: 92px;
-    height: 92px;
   }
 
   &.btn__medium {
@@ -73,4 +69,35 @@ i {
 
 .btn__icon-olive i {
   line-height: 20px;
+}
+
+// HOVER
+.btn__yellow:hover {
+  background: $COLOR_YELLOW;
+  border: 2px solid $COLOR_TEXT_50;
+  color: $COLOR_TEXT_50;
+}
+
+.btn__green:hover {
+  background: $COLOR_WHITE;
+  border: 2px solid $COLOR_GREEN;
+  color: $COLOR_GREEN;
+}
+
+.btn__olive:hover {
+  background: transparent;
+  border: 2px solid $COLOR_OLIVE;
+  color: $COLOR_OLIVE;
+}
+
+.btn__nude:hover {
+  background: transparent;
+  border: 2px solid $COLOR_NUDE;
+  color: $COLOR_NUDE;
+}
+
+.btn__black-border:hover {
+  background: $COLOR_TEXT_50;
+  color: $COLOR_WHITE;
+  border: 2px solid $COLOR_TEXT_50;
 }

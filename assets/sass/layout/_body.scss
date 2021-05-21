@@ -1,42 +1,10 @@
-.bg-white {
-  position: relative;
-  background-color: $COLOR_WHITE;
-}
-
-.white::after {
-  background: $COLOR_WHITE;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-}
-
-#about .container,
-#hiring .container,
-#contact .container,
-#discount .container {
-  z-index: 2;
-}
-
-.nude::after {
-  background: $COLOR_WHITE;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-}
-
 // ABOUT SECTION
 #about,
 #media {
   padding-top: 115px;
   padding-bottom: 115px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about__text {
@@ -52,6 +20,11 @@
 }
 
 // CLASSES
+#classes {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .classes_title {
   max-width: 450px;
   position: initial;
@@ -64,24 +37,51 @@
   margin-bottom: 16px;
 }
 
-.classes__item h4,
-.classes__item p {
-  color: $COLOR_WHITE;
+.classes__item-upper {
+  h3 {
+    color: $COLOR_WHITE;
+  }
+
+  p {
+    color: $COLOR_WHITE;
+  }
+}
+
+.classes__item-lower {
+  p {
+    color: $COLOR_WHITE;
+  }
+
+  span {
+    color: $COLOR_WHITE;
+  }
 }
 
 // DISCOUNT
 #discount {
   padding-top: 115px;
   padding-bottom: 115px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .discount__block {
   padding: 60px 28px;
 }
 
+.discount__item-text p {
+  color: $COLOR_WHITE;
+}
+
+.discount__item-btn {
+  margin-top: 36px;
+}
+
 // media
 #media {
   padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .media__btn span {
@@ -103,7 +103,9 @@
 
 // training
 #training {
-  padding-top: 140px;
+  padding-top: 116px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .training_title {
@@ -121,9 +123,26 @@
   height: 100%;
 }
 
+.training-vid {
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.training__vid:hover {
+  opacity: 1;
+}
+
+.training__vid h4,
+.training__vid p {
+  color: $COLOR_WHITE;
+  text-shadow: 2px 2px $COLOR_TEXT_50;
+}
+
 // instructor
 #instructors {
   padding-top: 125px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .instructor_title {
@@ -144,15 +163,27 @@
 #hiring {
   padding-top: 136px;
   padding-bottom: 136px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hiring__block {
   padding: 60px 28px;
 }
 
+.hiring__item-text p {
+  color: $COLOR_WHITE;
+}
+
+.hiring__item-btn {
+  margin-top: 36px;
+}
+
 // testimonials
 #testimonials {
   padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .testimonial_title {
@@ -163,7 +194,7 @@
 
 .testimonial__block {
   padding: 38px;
-  margin: 0 auto;
+  margin: 16px auto;
 }
 
 .testimonial__text {
@@ -175,10 +206,20 @@
   align-items: center;
 }
 
+.testimonial__pers-name {
+  align-content: center;
+}
+
+.testimonial__pers-name p {
+  color: $COLOR_WHITE;
+}
+
 // blog
 #blog {
   padding-top: 124px;
   padding-bottom: 124px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .blog_title {
@@ -189,11 +230,17 @@
 
 .blog__block {
   max-width: 370px;
-  margin: 0 auto;
+  margin: 26px auto;
 }
 
 .blog__block-title {
   color: $COLOR_TEXT;
+}
+
+.blog__block-title,
+.blog__block-date,
+.blog__block-more {
+  padding-left: 10px;
 }
 
 .blog_btn {

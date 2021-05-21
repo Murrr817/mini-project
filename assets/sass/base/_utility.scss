@@ -47,6 +47,10 @@
   align-content: center;
 }
 
+.ai-center {
+  align-items: center;
+}
+
 .jc-center {
   justify-content: center;
 }
@@ -117,6 +121,12 @@
   margin-top: 20px;
 }
 
+// margin-right
+.margin-right-25 {
+  margin-right: 25px;
+}
+
+// other margin
 .margin-20 {
   margin: 20px auto;
 }
@@ -125,13 +135,12 @@
   margin: 50px auto;
 }
 
-.margin-10 {
-  margin: 10px;
+.margin-auto {
+  margin: auto 0;
 }
 
-// margin-right
-.margin-right-25 {
-  margin-right: 25px;
+.margin-10 {
+  margin: 10px;
 }
 
 // PADDING
@@ -190,6 +199,7 @@
   border-radius: 32px;
 }
 
+// typography
 .menu_link {
   color: $COLOR_YELLOW;
   font-family: $SECOND_FONT;

@@ -1,8 +1,8 @@
 // SHOWCASE
 .icon {
   background: $COLOR_OLIVE;
-  max-width: 128px;
-  max-height: 128px;
+  min-width: 128px;
+  min-height: 128px;
   justify-content: center;
   align-items: center;
   border-radius: 32px;
@@ -32,6 +32,22 @@
   max-height: 48px;
 }
 
+// TRAINING
+.training__vid i {
+  width: 25px;
+  height: 20px;
+}
+
+// TESTIMONIALS
+.quote {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+  width: 48px;
+  height: 36px;
+}
+
+// CONTACT
 .icon-sm {
   background: $COLOR_OLIVE;
   width: 64px;
@@ -43,40 +59,7 @@
   margin: 20px;
 }
 
-// training
-.training__vid i {
-  width: 25px;
-  height: 20px;
-}
-
-.training__vid {
-  position: relative;
-  overflow: hidden;
-}
-
-.training__vid > .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.training__vid > .training__class {
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
-}
-
-.training__vid > .training__time {
-  position: absolute;
-  bottom: 30%;
-  left: 10%;
-}
-
-// testimonials
-.quote {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-  height: 36px;
+.icon-sm img {
+  max-width: 27px;
+  max-height: 32px;
 }

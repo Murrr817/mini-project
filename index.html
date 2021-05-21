@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Kumbh+Sans:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Kumbh+Sans:wght@300;400;700&family=Lobster&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,13 +22,15 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <!-- ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="navbar">
       <div class="nav">
         <input type="checkbox" id="nav-check" />
         <div class="nav-header">
-          <div class="nav-title">YOGA</div>
+          <div class="nav-title logo">Chakra</div>
         </div>
         <div class="nav-btn">
           <label for="nav-check">
@@ -39,10 +41,10 @@
         </div>
 
         <div class="nav-links">
-          <a class="t-nav" href="">ABOUT</a>
-          <a class="t-nav" href="">CLASSES</a>
-          <a class="t-nav" href="">BLOG</a>
-          <a class="t-nav" href="">CONACTS</a>
+          <a class="t-nav" href="#about">ABOUT</a>
+          <a class="t-nav" href="#classes">CLASSES</a>
+          <a class="t-nav" href="#blog">BLOG</a>
+          <a class="t-nav" href="#contact">CONACTS</a>
         </div>
       </div>
     </header>
@@ -83,7 +85,7 @@
     <section id="showcase">
       <div class="container">
         <div class="row">
-          <div class="column column-md-4 column-sm-4 center">
+          <div class="column column-md-4 column-sm-12 center">
             <div class="showcase__item center">
               <div class="showcase__icon icon center margin-btm-30">
                 <img src="./assets/img/hero_icon-1.png" alt="Healthy" />
@@ -97,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="column column-md-4 column-sm-4 center">
+          <div class="column column-md-4 column-sm-12 center margin-top-btm-50">
             <div class="showcase__item center">
               <div class="showcase__icon icon center margin-btm-30">
                 <img src="./assets/img/hero_icon-2.png" alt="Flexibility" />
@@ -111,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="column column-md-4 column-sm-4 center">
+          <div class="column column-md-4 column-sm-12 center">
             <div class="showcase__item center">
               <div class="showcase__icon icon center margin-btm-30">
                 <img src="./assets/img/hero_icon-3.png" alt="Balance" />
@@ -133,7 +135,7 @@
     <section id="about" class="p-relative">
       <div class="container white-filled-outline">
         <div class="row center">
-          <div class="column column-md-6 column-sm-12 center">
+          <div class="column column-lg-6 column-md-4 column-sm-12 center">
             <div class="about__image">
               <img
                 src="./assets/img/about_img-1.png"
@@ -142,7 +144,7 @@
               />
             </div>
           </div>
-          <div class="column column-md-6 column-sm-12">
+          <div class="column column-lg-6 column-md-8 column-sm-12">
             <div class="about__text">
               <h4 class="menu_link t-menu-link">ABOUT STUDIO</h4>
               <h2 class="about__text-title t-sec-title margin-btm-20">
@@ -303,7 +305,7 @@
     <section id="media">
       <div class="container white-filled-outline">
         <div class="row media__box">
-          <div class="column column-md-6 column-sm-12">
+          <div class="column column-lg-6 column-md-5 column-sm-12">
             <div class="media__text">
               <h4 class="menu_link t-menu-link">MEDIA GALLERY</h4>
               <h2 class="media__text-title t-sec-title margin-btm-20">
@@ -313,7 +315,7 @@
                 The sky was cloudless and of a deep dark blue spectacle before
                 us was indeed sublime sky was cloudless and of a deep dark blue.
               </p>
-              <div class="media__btn margin-top-90">
+              <div class="media__btn margin-top-50">
                 <a href="" class="btn btn__icon-olive">
                   <i class="fas fa-play"></i>
                 </a>
@@ -323,7 +325,7 @@
               </div>
             </div>
           </div>
-          <div class="column column-md-6 column-sm-12 center">
+          <div class="column column-lg-6 column-md-7 column-sm-12 center">
             <div class="media__image">
               <img
                 src="./assets/img/vid-1.png"
@@ -347,21 +349,47 @@
           </div>
         </div>
         <div class="row">
-          <div class="column column-md-8">
-            <div class="training__vid training__vid-lg p-relative">
-              <img src="./assets/img/vid-2.png" alt="media" class="media" />
-              <a href="" class="play-btn btn btn__icon-olive">
-                <i class="fas fa-play"></i>
-              </a>
-              <p class="t-tag training__time">45 min</p>
-              <h4 class="t-text training__class">Ashtanga Yoga</h4>
-            </div>
-          </div>
-          <div class="column column-md-4">
+          <div class="column column-lg-8 column-md-6">
             <div class="row">
               <div class="column">
-                <div class="training__vid margin-btm-30 p-relative">
-                  <img src="./assets/img/vid-3.png" alt="media" class="media" />
+                <div class="training__vid training__vid-lg p-relative">
+                  <img
+                    src="./assets/img/vid-2.png"
+                    alt="training"
+                    class="training-img"
+                  />
+                  <a href="" class="play-btn btn btn__icon-olive">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <p class="t-tag training__time">45 min</p>
+                  <h4 class="t-text training__class">Ashtanga Yoga</h4>
+                </div>
+              </div>
+              <div class="column d-lg-none">
+                <div class="training__vid training__vid-meditation p-relative">
+                  <img
+                    src="./assets/img/vid-5.jpg"
+                    alt="training"
+                    class="training-img"
+                  />
+                  <a href="" class="play-btn btn btn__icon-olive">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <p class="t-tag training__time">30 min</p>
+                  <h4 class="t-text training__class">Meditation</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-lg-4 column-md-6">
+            <div class="row">
+              <div class="column">
+                <div class="training__vid training__vid-hatha p-relative">
+                  <img
+                    src="./assets/img/vid-3.png"
+                    alt="training"
+                    class="training-img"
+                  />
                   <a href="" class="play-btn btn btn__icon-olive">
                     <i class="fas fa-play"></i>
                   </a>
@@ -372,8 +400,12 @@
             </div>
             <div class="row">
               <div class="column">
-                <div class="training__vid p-relative">
-                  <img src="./assets/img/vid-4.png" alt="media" class="media" />
+                <div class="training__vid training__vid-vinayasa p-relative">
+                  <img
+                    src="./assets/img/vid-4.png"
+                    alt="training"
+                    class="training-img"
+                  />
                   <a href="" class="play-btn btn btn__icon-olive">
                     <i class="fas fa-play"></i>
                   </a>
@@ -407,7 +439,9 @@
           <div class="column">
             <div class="carousel">
               <!-- add 2 more carousel -->
-              <div class="carousel__item instructor__block white-filled">
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
                 <img
                   src="./assets/img/team_img-1.png"
                   alt="Lia"
@@ -425,7 +459,9 @@
                 <p class="t-content">Ashtanga Yoga</p>
               </div>
 
-              <div class="carousel__item instructor__block white-filled">
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
                 <img
                   src="./assets/img/team_img-2.png"
                   alt="Jaquon"
@@ -443,7 +479,9 @@
                 <p class="t-content">Hatha Yoga</p>
               </div>
 
-              <div class="carousel__item instructor__block white-filled">
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
                 <img
                   src="./assets/img/team_img-3.png"
                   alt="Winny"
@@ -461,7 +499,9 @@
                 <p class="t-content">Vinayasa Yoga</p>
               </div>
 
-              <div class="carousel__item instructor__block white-filled">
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
                 <img
                   src="./assets/img/team_img-4.png"
                   alt="Yvonne"
@@ -475,6 +515,82 @@
                   "
                 >
                   Yvonne Knight
+                </h4>
+                <p class="t-content">Meditation</p>
+              </div>
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
+                <img
+                  src="./assets/img/team_img-7.png"
+                  alt="Lia"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Hale Hart
+                </h4>
+                <p class="t-content">Ashtanga Yoga</p>
+              </div>
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
+                <img
+                  src="./assets/img/team_img-6.png"
+                  alt="Lia"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Will Newman
+                </h4>
+                <p class="t-content">Hatha Yoga</p>
+              </div>
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
+                <img
+                  src="./assets/img/team_img-8.png"
+                  alt="Lia"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Joan Eland
+                </h4>
+                <p class="t-content">Vinayasa Yoga</p>
+              </div>
+              <div
+                class="carousel__item instructor__block white-filled p-relative"
+              >
+                <img
+                  src="./assets/img/team_img-5.png"
+                  alt="Lia"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Drago Neri
                 </h4>
                 <p class="t-content">Meditation</p>
               </div>
@@ -516,8 +632,8 @@
             <h2 class="t-sec-title">What Our Clients Say About Us</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="column column-lg-6 column-md-9 column-sm-12">
+        <div class="row center">
+          <div class="column column-lg-6 column-md-9 column-sm-12 p-relative">
             <div class="testimonial__block brown-filled">
               <img src="/assets/img/quote.png" alt="quote" class="quote" />
               <div class="testimonial__text margin-btm-10">
@@ -529,22 +645,22 @@
                   text."
                 </p>
               </div>
-              <div class="testimonial__pers d-flex-wrap">
+              <div class="testimonial__pers d-flex-wrap ai-center">
                 <div class="testimonial__pers-image margin-right-25 d-flex">
                   <img
-                    src="./assets/img/testimonilas.png"
+                    src="./assets/img/testimonial-1.png"
                     alt="testimonial__img"
                   />
                 </div>
                 <div class="testimonial__pers-name d-column">
-                  <h4 class="t-tag">Elsi Hansdottir</h4>
+                  <h4 class="t-label">Elsi Hansdottir</h4>
                   <p class="t-content">Meditation</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="column column-lg-6 column-md-9 column-sm-12">
+          <div class="column column-lg-6 column-md-9 column-sm-12 p-relative">
             <div class="testimonial__block brown-filled">
               <img src="/assets/img/quote.png" alt="quote" class="quote" />
               <div class="testimonial__text margin-btm-10">
@@ -555,22 +671,21 @@
                   line of blind text by the name."
                 </p>
               </div>
-              <div class="testimonial__pers d-flex">
+              <div class="testimonial__pers d-flex ai-center">
                 <div class="testimonial__pers-image margin-right-25 d-flex">
                   <img
-                    src="./assets/img/testimonilas.png"
+                    src="./assets/img/testimonial-2.png"
                     alt="testimonial__img"
                   />
                 </div>
                 <div class="testimonial__pers-name d-column">
-                  <h4 class="t-tag">Stephanie Bailey</h4>
+                  <h4 class="t-label">Stephanie Bailey</h4>
                   <p class="t-content">Ashtanga Yoga</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="row center">
           <div class="testimonial__btn margin-top-65">
             <a href="" class="btn btn__black-border">LOAD MORE</a>
@@ -637,7 +752,7 @@
 
     <section id="contact" class="p-relative">
       <div class="container contact__block">
-        <div class="row">
+        <div class="row jc-center">
           <div class="column column-md-6 column-sm-12">
             <img
               src="./assets/img/background-2.png"
@@ -645,7 +760,7 @@
               class="contact"
             />
           </div>
-          <div class="column column-md-6 column-sm-12 ac-center">
+          <div class="column column-md-6 column-sm-12 ac-center margin-auto">
             <div class="row">
               <div class="contact__title d-column">
                 <h3 class="t-sec-title margin-btm-15">Contact Us!</h3>
@@ -661,7 +776,7 @@
                   7767 Clark Drive Shelton, CT 06484
                 </p>
               </div>
-              <div class="d-flex margin-btm-45">
+              <div class="d-flex">
                 <div href="" class="contact__icon icon-sm">
                   <img src="./assets/img/contact-2.png" alt="" />
                 </div>
@@ -681,18 +796,11 @@
 
     <footer id="footer">
       <div class="container">
-        <div class="row inner-footer">
-          <div class="column column-md-3 column-sm-12 jc-center">
-            <div class="logo h2 footer__item">YOGA</div>
+        <div class="row">
+          <div class="column column-lg-3 column-md-4 jc-center">
+            <div class="logo h2 footer__item">Chakra</div>
           </div>
-          <div
-            class="
-              column column-md-3 column-sm-12
-              d-column-center
-              margin-20
-              center
-            "
-          >
+          <div class="column column-lg-3 column-md-4 d-column-center">
             <ul class="t-footer footer__item margin-btm-15">
               MENU
               <li href="#about" class="t-content"><a>About</a></li>
@@ -701,14 +809,7 @@
               <li href="contact" class="t-content"><a>Contact</a></li>
             </ul>
           </div>
-          <div
-            class="
-              column column-md-3 column-sm-12
-              d-column-center
-              margin-20
-              center
-            "
-          >
+          <div class="column column-lg-3 column-md-4 d-column-center">
             <ul class="t-footer footer__item margin-btm-15">
               CLASSES
               <li href="#classes__ashtanga" class="t-content">
@@ -723,7 +824,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item column column-md-3 column-sm-12 margin-20">
+          <div class="footer__item column column-lg-3 column-md-12">
             <a href="" class="btn btn__icon-only">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -736,17 +837,19 @@
           </div>
         </div>
 
-        <div class="row"><div class="border"></div></div>
-
         <div class="row margin-top-90">
-          <div class="lower-footer jc-space-between">
-            <p class="t-content">
-              Copyright © 2020 Laaqiq. All Rights Reserved.
-            </p>
-            <ul>
-              <li>Terms of Use</li>
-              <li>Privacy Policy</li>
-            </ul>
+          <div class="column">
+            <div class="lower-footer">
+              <p class="t-content lower-footer__copywrite">
+                Copyright © 2020 Laaqiq. All Rights Reserved.
+              </p>
+              <div class="lower-footer__terms">
+                <a href="" class="t-tag">Terms of Use</a>
+                <a href="" class="t-tag lower-footer__privacy"
+                  >Privacy Policy</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -767,7 +870,10 @@
         freeScroll: true,
         wrapAround: true,
       });
+
+      AOS.init();
     </script>
-    <!-- carousel cards library -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

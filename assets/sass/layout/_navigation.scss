@@ -25,7 +25,7 @@
   font-size: 32px;
   font-weight: 700;
   color: $COLOR_WHITE;
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav > .nav-btn {
@@ -55,6 +55,10 @@
   display: none;
 }
 
+.logo {
+  font-family: "Lobster", cursive;
+}
+
 @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -64,7 +68,7 @@
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    padding: 13px 13px 7px 13px;
+    padding: 20px 20px 10px 20px;
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
@@ -95,38 +99,7 @@
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: 190px;
+    height: 235px;
     overflow-y: auto;
   }
-}
-
-// HERO SECTION
-#hero {
-  background: url(./../img/background.png) no-repeat center center fixed;
-  height: 880px;
-  width: 100%;
-  background-size: cover;
-  padding-top: 140px;
-}
-
-.hero-block {
-  max-width: 330px;
-  text-align: center;
-  width: 100%;
-}
-
-// SHOWCASE SECTION
-.showcase__item {
-  max-width: 340px;
-  align-self: center;
-  text-align: center;
-}
-
-.showcase__item:first-child {
-  padding-top: 175px;
-}
-
-.showcase__item:nth-child(2) {
-  margin-bottom: 50px;
-  margin-top: 50px;
 }

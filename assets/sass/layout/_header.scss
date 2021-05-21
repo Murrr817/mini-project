@@ -1,0 +1,50 @@
+// HERO SECTION
+#hero {
+  background: url(./../img/background.png) no-repeat center center fixed;
+  height: 880px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 140px;
+}
+
+.hero-block {
+  max-width: 330px;
+  text-align: center;
+  width: 100%;
+}
+
+.hero__image img {
+  margin-top: 50px;
+}
+
+// SHOWCASE SECTION
+#showcase {
+  padding-top: 175px;
+}
+
+.showcase__item {
+  max-width: 340px;
+  align-self: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  // HERO SECTION
+  .hero-block {
+    max-width: 440px;
+  }
+
+  .hero__image img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-block {
+    max-width: 550px;
+  }
+
+  .hero__image img {
+    max-width: 450px;
+  }
+}

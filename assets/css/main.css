@@ -1,20 +1,29 @@
+@media screen and (min-width: 576px) {
+  .discount__item-btn {
+    margin-top: 36px;
+  }
+  .hero__image {
+    margin-top: 80px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .hero-block {
-    max-width: 550px;
-  }
-  .showcase__item:not(2) {
-    padding-top: 255px;
-  }
-  .showcase__item:nth-child(2) {
-    padding-top: 305px;
-    margin: 0%;
-  }
   #about,
   #media {
     padding-top: 145px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .media__text {
     margin-bottom: 0;
+  }
+  .classes {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #discount {
+    padding-left: 0;
+    padding-right: 0;
   }
   .discount__block {
     display: -webkit-box;
@@ -46,15 +55,44 @@
   .discount__item-img {
     margin-right: 45px;
   }
+  .discount__item-btn {
+    margin-top: 0;
+  }
+  #media {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #training {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .training_title {
     padding-bottom: 63px;
+  }
+  .training__vid-vinayasa {
+    margin-top: 15px;
+  }
+  .training__vid-meditation {
+    margin-top: 15px;
+  }
+  #instructors {
+    padding-left: 0;
+    padding-right: 0;
   }
   .instructor_title {
     padding-bottom: 60px;
   }
+  .instructor_title {
+    padding-bottom: 63px;
+  }
+  .testimonial__block {
+    padding: 48px;
+  }
   #hiring {
     padding-top: 116px;
     padding-bottom: 116px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .hiring__block {
     display: -webkit-box;
@@ -86,23 +124,21 @@
   .hiring__item-img {
     margin-right: 45px;
   }
+  .hiring__item-btn {
+    margin-top: 0;
+  }
   #testimonials {
     padding-top: 92px;
-  }
-  .instructor_title {
-    padding-bottom: 63px;
-  }
-  .testimonial__block {
-    padding: 48px;
+    padding-left: 0;
+    padding-right: 0;
   }
   #blog {
     padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .blog_title {
     margin-bottom: 63px;
-  }
-  #contact {
-    padding-top: 85px;
   }
   .t-hero-title {
     font-family: "David Libre", serif;
@@ -119,6 +155,12 @@
     line-height: 64px;
     letter-spacing: -1.4px;
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .d-lg-none {
+    display: none;
   }
 }
 
@@ -328,7 +370,7 @@ table {
 
 .t-content {
   font-family: "Kumbh Sans", sans-serif;
-  color: #817c89;
+  color: #494255;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -501,6 +543,12 @@ table {
       align-content: center;
 }
 
+.ai-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .jc-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -578,6 +626,10 @@ table {
   margin-top: 20px;
 }
 
+.margin-right-25 {
+  margin-right: 25px;
+}
+
 .margin-20 {
   margin: 20px auto;
 }
@@ -586,12 +638,12 @@ table {
   margin: 50px auto;
 }
 
-.margin-10 {
-  margin: 10px;
+.margin-auto {
+  margin: auto 0;
 }
 
-.margin-right-25 {
-  margin-right: 25px;
+.margin-10 {
+  margin: 10px;
 }
 
 .padding-45-25 {
@@ -622,8 +674,8 @@ table {
   border-radius: 32px;
   outline: 2px solid #fff;
   outline-offset: 24px;
-  -webkit-box-shadow: 0 16px 32px 0 #817c89;
-          box-shadow: 0 16px 32px 0 #817c89;
+  -webkit-box-shadow: 0 16px 32px 0 #494255;
+          box-shadow: 0 16px 32px 0 #494255;
   padding: 64px 27px;
 }
 
@@ -674,8 +726,8 @@ table {
 
 #navbar.navbar--scroll {
   background: #beb29f;
-  -webkit-box-shadow: 2px 2px 4px #817c89;
-          box-shadow: 2px 2px 4px #817c89;
+  -webkit-box-shadow: 2px 2px 4px #494255;
+          box-shadow: 2px 2px 4px #494255;
 }
 
 .nav > .nav-header {
@@ -687,7 +739,7 @@ table {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav > .nav-btn {
@@ -716,6 +768,10 @@ table {
   display: none;
 }
 
+.logo {
+  font-family: "Lobster", cursive;
+}
+
 @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -725,7 +781,7 @@ table {
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    padding: 13px 13px 7px 13px;
+    padding: 20px 20px 10px 20px;
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
@@ -757,40 +813,9 @@ table {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: 190px;
+    height: 235px;
     overflow-y: auto;
   }
-}
-
-#hero {
-  background: url(./../img/background.png) no-repeat center center fixed;
-  height: 880px;
-  width: 100%;
-  background-size: cover;
-  padding-top: 140px;
-}
-
-.hero-block {
-  max-width: 330px;
-  text-align: center;
-  width: 100%;
-}
-
-.showcase__item {
-  max-width: 340px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-}
-
-.showcase__item:first-child {
-  padding-top: 175px;
-}
-
-.showcase__item:nth-child(2) {
-  margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 .container {
@@ -1079,44 +1104,12 @@ table {
   }
 }
 
-.bg-white {
-  position: relative;
-  background-color: #fff;
-}
-
-.white::after {
-  background: #fff;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-}
-
-#about .container,
-#hiring .container,
-#contact .container,
-#discount .container {
-  z-index: 2;
-}
-
-.nude::after {
-  background: #fff;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-}
-
 #about,
 #media {
   padding-top: 115px;
   padding-bottom: 115px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about__text {
@@ -1131,6 +1124,11 @@ table {
   max-width: 430px;
 }
 
+#classes {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .classes_title {
   max-width: 450px;
   position: initial;
@@ -1143,22 +1141,45 @@ table {
   margin-bottom: 16px;
 }
 
-.classes__item h4,
-.classes__item p {
+.classes__item-upper h3 {
+  color: #fff;
+}
+
+.classes__item-upper p {
+  color: #fff;
+}
+
+.classes__item-lower p {
+  color: #fff;
+}
+
+.classes__item-lower span {
   color: #fff;
 }
 
 #discount {
   padding-top: 115px;
   padding-bottom: 115px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .discount__block {
   padding: 60px 28px;
 }
 
+.discount__item-text p {
+  color: #fff;
+}
+
+.discount__item-btn {
+  margin-top: 36px;
+}
+
 #media {
   padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .media__btn span {
@@ -1179,7 +1200,9 @@ table {
 }
 
 #training {
-  padding-top: 140px;
+  padding-top: 116px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .training_title {
@@ -1197,8 +1220,26 @@ table {
   height: 100%;
 }
 
+.training-vid {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.training__vid:hover {
+  opacity: 1;
+}
+
+.training__vid h4,
+.training__vid p {
+  color: #fff;
+  text-shadow: 2px 2px #494255;
+}
+
 #instructors {
   padding-top: 125px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .instructor_title {
@@ -1218,14 +1259,26 @@ table {
 #hiring {
   padding-top: 136px;
   padding-bottom: 136px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hiring__block {
   padding: 60px 28px;
 }
 
+.hiring__item-text p {
+  color: #fff;
+}
+
+.hiring__item-btn {
+  margin-top: 36px;
+}
+
 #testimonials {
   padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .testimonial_title {
@@ -1236,7 +1289,7 @@ table {
 
 .testimonial__block {
   padding: 38px;
-  margin: 0 auto;
+  margin: 16px auto;
 }
 
 .testimonial__text {
@@ -1250,9 +1303,20 @@ table {
           align-items: center;
 }
 
+.testimonial__pers-name {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.testimonial__pers-name p {
+  color: #fff;
+}
+
 #blog {
   padding-top: 124px;
   padding-bottom: 124px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .blog_title {
@@ -1263,19 +1327,75 @@ table {
 
 .blog__block {
   max-width: 370px;
-  margin: 0 auto;
+  margin: 26px auto;
 }
 
 .blog__block-title {
   color: #100720;
 }
 
+.blog__block-title,
+.blog__block-date,
+.blog__block-more {
+  padding-left: 10px;
+}
+
 .blog_btn {
   margin-top: 65px;
 }
 
+#hero {
+  background: url(./../img/background.png) no-repeat center center fixed;
+  height: 880px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 140px;
+}
+
+.hero-block {
+  max-width: 330px;
+  text-align: center;
+  width: 100%;
+}
+
+.hero__image img {
+  margin-top: 50px;
+}
+
+#showcase {
+  padding-top: 175px;
+}
+
+.showcase__item {
+  max-width: 340px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block {
+    max-width: 440px;
+  }
+  .hero__image img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-block {
+    max-width: 550px;
+  }
+  .hero__image img {
+    max-width: 450px;
+  }
+}
+
 #contact {
-  padding-top: 21px;
+  padding-top: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contact__block {
@@ -1288,20 +1408,87 @@ table {
   padding-top: 110px;
 }
 
-.border {
-  padding-top: 64px;
-  padding-bottom: 60px;
+.lower-footer {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  border-top: 1px solid #494255;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__item {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer__item a {
+  color: #fff;
+}
+
+.footer__item > .btn__icon-only {
+  margin-right: 5px;
+}
+
+.lower-footer__copywrite {
+  max-width: 195px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.lower-footer__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+.lower-footer a {
+  color: #100720;
+}
+
+.lower-footer__privacy {
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 768px) {
+  #contact {
+    padding-top: 85px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   #footer {
     padding-top: 77px;
+  }
+  .lower-footer__copywrite {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer__item {
+    text-align: left;
+  }
+  .lower-footer {
+    padding-top: 43px;
+    padding-bottom: 36px;
+  }
+  .lower-footer__terms {
+    margin-top: 0;
   }
 }
 
 i {
   line-height: 24px;
-  width: 24px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1326,7 +1513,6 @@ i {
 
 .btn.btn__green {
   background: #558065;
-  border: 2px solid #558065;
   border: 2px solid #558065;
 }
 
@@ -1362,8 +1548,6 @@ i {
   padding: 30px;
   border-radius: 50%;
   color: #fff;
-  width: 92px;
-  height: 92px;
 }
 
 .btn.btn__medium {
@@ -1376,10 +1560,40 @@ i {
   line-height: 20px;
 }
 
+.btn__yellow:hover {
+  background: #fce28b;
+  border: 2px solid #494255;
+  color: #494255;
+}
+
+.btn__green:hover {
+  background: #fff;
+  border: 2px solid #558065;
+  color: #558065;
+}
+
+.btn__olive:hover {
+  background: transparent;
+  border: 2px solid #6c7154;
+  color: #6c7154;
+}
+
+.btn__nude:hover {
+  background: transparent;
+  border: 2px solid #beb29f;
+  color: #beb29f;
+}
+
+.btn__black-border:hover {
+  background: #494255;
+  color: #fff;
+  border: 2px solid #494255;
+}
+
 .icon {
   background: #6c7154;
-  max-width: 128px;
-  max-height: 128px;
+  min-width: 128px;
+  min-height: 128px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1417,6 +1631,19 @@ i {
   max-height: 48px;
 }
 
+.training__vid i {
+  width: 25px;
+  height: 20px;
+}
+
+.quote {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+  width: 48px;
+  height: 36px;
+}
+
 .icon-sm {
   background: #6c7154;
   width: 64px;
@@ -1434,9 +1661,65 @@ i {
   margin: 20px;
 }
 
-.training__vid i {
-  width: 25px;
-  height: 20px;
+.icon-sm img {
+  max-width: 27px;
+  max-height: 32px;
+}
+
+.carousel {
+  min-height: 420px;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__item {
+  width: 270px;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 15px;
+  z-index: 1;
+}
+
+.bg-white {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.white::after {
+  background: #fff;
+  border: 1px solid #fff;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+#about .container,
+#hiring .container,
+#contact .container,
+#discount .container {
+  z-index: 2;
+}
+
+.nude::after {
+  background: #fff;
+  border: 1px solid #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
 }
 
 .training__vid {
@@ -1446,46 +1729,61 @@ i {
 
 .training__vid > .play-btn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
 }
 
 .training__vid > .training__class {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 10%;
+  -webkit-transform: translate(-20%, 10%);
+          transform: translate(-20%, 10%);
 }
 
 .training__vid > .training__time {
   position: absolute;
   bottom: 30%;
   left: 10%;
+  -webkit-transform: translate(-40%, 10%);
+          transform: translate(-40%, 10%);
 }
 
-.quote {
+@media screen and (min-width: 992px) {
+  .training__vid > .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .training__vid > .training__class {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  .training__vid > .training__time {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    -webkit-transform: translate(-12%, -10%);
+            transform: translate(-12%, -10%);
+  }
+}
+
+.instructor__img {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-  height: 36px;
+  left: 0;
+  top: -32px;
+  padding: 16px;
+  z-index: 5;
 }
 
-.carousel {
-  min-height: 480px;
-  height: 100%;
-  position: relative;
-}
-
-.carousel__item {
-  width: 270px;
-  height: 336px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: -16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 15px;
+.carousel__item h4 {
+  padding-top: 225px;
 }
 /*# sourceMappingURL=main.css.map */
