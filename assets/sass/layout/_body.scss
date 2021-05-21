@@ -3,8 +3,8 @@
 #media {
   padding-top: 115px;
   padding-bottom: 115px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .about__text {
@@ -78,12 +78,6 @@
 }
 
 // media
-#media {
-  padding-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .media__btn span {
   color: $COLOR_TEXT;
 }
@@ -115,21 +109,12 @@
   padding-bottom: 53px;
 }
 
-.training__vid {
-  min-height: 260px;
-}
-
-.training__vid-lg {
+.training__vid-ashtanga {
   height: 100%;
 }
 
-.training-vid {
-  background: rgba(0, 0, 0, 0.7);
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.training__vid:hover {
-  opacity: 1;
+.training__vid {
+  margin-top: 15px;
 }
 
 .training__vid h4,
@@ -202,8 +187,9 @@
 }
 
 .testimonials__text-quote {
-  max-width: 485px;
+  max-width: 500px;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .testimonial__pers-name {
@@ -217,7 +203,6 @@
 // blog
 #blog {
   padding-top: 124px;
-  padding-bottom: 124px;
   padding-left: 15px;
   padding-right: 15px;
 }

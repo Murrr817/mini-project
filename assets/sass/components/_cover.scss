@@ -44,44 +44,21 @@
 
 .training__vid > .play-btn {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .training__vid > .training__class {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 10%;
-  transform: translate(-20%, 10%);
+  transform: translate(-10%, -10%);
 }
 
 .training__vid > .training__time {
   position: absolute;
-  bottom: 30%;
+  bottom: 20%;
   left: 10%;
-  transform: translate(-40%, 10%);
-}
-
-@media screen and (min-width: 992px) {
-  .training__vid > .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .training__vid > .training__class {
-    position: absolute;
-    bottom: 5%;
-    left: 10%;
-    transform: translate(-5%, -10%);
-  }
-
-  .training__vid > .training__time {
-    position: absolute;
-    bottom: 12%;
-    left: 10%;
-    transform: translate(-12%, -10%);
-  }
+  transform: translate(-20%, -30%);
 }

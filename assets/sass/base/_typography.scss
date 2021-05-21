@@ -38,10 +38,12 @@
 
 .t-hero-title {
   font-family: $MAIN_FONT;
+  color: $COLOR_WHITE;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: -1.4px;
   font-weight: 700;
+  text-shadow: 2px 2px $COLOR_TEXT_50;
 }
 
 .t-sec-title {

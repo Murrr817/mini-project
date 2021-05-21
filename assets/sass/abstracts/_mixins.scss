@@ -12,18 +12,11 @@
   .hero__image {
     margin-top: 80px;
   }
+
+  .training__vid {
+    margin-bottom: 16px;
+  }
 }
-
-// @media screen and (max-width: 576px) {
-//   .discount__item-btn {
-//     margin-top: 36px;
-//   }
-
-//   section {
-//     padding-left: 12px;
-//     padding-right: 12px;
-//   }
-// }
 
 // md
 @media screen and (min-width: 768px) {
@@ -91,11 +84,11 @@
   }
 
   .training__vid-vinayasa {
-    margin-top: 15px;
+    margin-top: 0;
   }
 
-  .training__vid-meditation {
-    margin-top: 15px;
+  .training__vid-hatha {
+    margin-top: 0;
   }
 
   // INSTRUCTOR
@@ -167,8 +160,6 @@
 
   // TYPOGRAPHY
   .t-hero-title {
-    font-family: $MAIN_FONT;
-    color: $COLOR_WHITE;
     font-size: 72px;
     line-height: 80px;
     letter-spacing: -2px;
@@ -176,7 +167,6 @@
   }
 
   .t-sec-title {
-    font-family: $MAIN_FONT;
     color: $COLOR_TEXT;
     font-size: 56px;
     line-height: 64px;
@@ -188,5 +178,10 @@
 @media screen and (min-width: 992px) {
   .d-lg-none {
     display: none;
+  }
+
+  .training__vid {
+    margin-top: 0;
+    padding-top: 0;
   }
 }

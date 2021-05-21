@@ -1,7 +1,8 @@
 // contact
 
 #contact {
-  padding-top: 11px;
+  padding-top: 135px;
+  padding-bottom: 135px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -13,8 +14,13 @@
 }
 
 // footer
+.logo {
+  color: $COLOR_WHITE;
+  text-shadow: 2px 2px $COLOR_TEXT_50;
+}
+
 #footer {
-  padding-top: 110px;
+  padding-bottom: 20px;
 }
 
 .lower-footer {
@@ -61,12 +67,9 @@
 @media screen and (min-width: 768px) {
   #contact {
     padding-top: 85px;
+    padding-bottom: 85px;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  #footer {
-    padding-top: 77px;
   }
 
   .lower-footer__copywrite {
@@ -82,9 +85,5 @@
   .lower-footer {
     padding-top: 43px;
     padding-bottom: 36px;
-  }
-
-  .lower-footer__terms {
-    margin-top: 0;
   }
 }
