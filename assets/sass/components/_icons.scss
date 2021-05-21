@@ -1,15 +1,20 @@
 // SHOWCASE
 .icon {
   background: $COLOR_OLIVE;
-  width: 128px;
-  height: 128px;
+  max-width: 128px;
+  max-height: 128px;
   justify-content: center;
   align-items: center;
   border-radius: 32px;
 }
 
 .icon img {
-  width: 64px;
+  max-width: 64px;
+}
+
+// CLASSES
+.classes__item img {
+  height: 147px;
 }
 
 // DISCOUNT & HIRING
@@ -23,7 +28,8 @@
 .symbol img {
   align-self: center;
   justify-self: center;
-  width: 71px;
+  max-width: 46px;
+  max-height: 48px;
 }
 
 .icon-sm {

@@ -1,0 +1,16 @@
+.carousel {
+  min-height: 480px;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__item {
+  width: 270px;
+  height: 336px;
+  justify-content: center;
+  padding-top: -16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 15px;
+}

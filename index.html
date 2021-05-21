@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YOGA LANDING PAGE</title>
+    <!-- carousel cards library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -125,176 +130,174 @@
     </section>
 
     <!-- START OF WHITE FLUID BACKGROUND -->
-    <div class="container-fluid fluid-bg">
-      <section id="about">
-        <div class="container white-filled-outline">
-          <div class="row center">
-            <div class="column column-md-6 column-sm-12 center">
-              <div class="about__image">
-                <img
-                  src="./assets/img/about_img-1.png"
-                  alt="about"
-                  class="about__img"
-                />
-              </div>
-            </div>
-            <div class="column column-md-6 column-sm-12">
-              <div class="about__text">
-                <h4 class="menu_link t-menu-link">ABOUT STUDIO</h4>
-                <h2 class="about__text-title t-sec-title margin-btm-20">
-                  Get Perfect Body & Clear Your Mind
-                </h2>
-                <p class="t-caption margin-btm-20">
-                  The sky was cloudless and of a deep dark blue spectacle before
-                  us was indeed sublime sky was cloudless and of a deep dark
-                  blue.
-                </p>
-                <p class="t-content margin-btm-45">
-                  It is a paradisematic country, in which roasted parts of
-                  sentences fly into your mouth. Even the all-powerful Pointing
-                  has no control about the blind texts it is an almost
-                  unorthographic life One day however.
-                </p>
-                <div class="ac-center">
-                  <a href="" class="btn btn__green">EXPLORE</a>
-                </div>
-              </div>
+    <section id="about" class="p-relative">
+      <div class="container white-filled-outline">
+        <div class="row center">
+          <div class="column column-md-6 column-sm-12 center">
+            <div class="about__image">
+              <img
+                src="./assets/img/about_img-1.png"
+                alt="about"
+                class="about__img"
+              />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="classes">
-        <div class="container">
-          <div class="row center">
-            <div class="classes_title center">
-              <h4 class="menu_link t-menu-link center">OUR CLASSES</h4>
-              <h2 class="t-sec-title margin-btm-45 center">
-                Discover & Register For Our Classes
+          <div class="column column-md-6 column-sm-12">
+            <div class="about__text">
+              <h4 class="menu_link t-menu-link">ABOUT STUDIO</h4>
+              <h2 class="about__text-title t-sec-title margin-btm-20">
+                Get Perfect Body & Clear Your Mind
               </h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column column-md-6 column-sm-12">
-              <div class="classes__item nude-filled d-column-center">
-                <div class="classes__item-upper d-column margin-btm-15">
-                  <h3 class="t-sec-title">Vinayasa Yoga</h3>
-                  <p class="t-caption">Lia Castro</p>
-                </div>
-                <div class="classes__item-lower d-flex-wrap jc-space-between">
-                  <div class="vinayasa__price">
-                    <p class="t-content">
-                      ₱<span class="t-sec-title">1,200</span>/mo
-                    </p>
-                  </div>
-                  <div class="vinayasa__image">
-                    <img
-                      src="./assets/img/classes_img-1.png"
-                      alt=""
-                      class="team"
-                    />
-                  </div>
-                </div>
+              <p class="t-caption margin-btm-20">
+                The sky was cloudless and of a deep dark blue spectacle before
+                us was indeed sublime sky was cloudless and of a deep dark blue.
+              </p>
+              <p class="t-content margin-btm-45">
+                It is a paradisematic country, in which roasted parts of
+                sentences fly into your mouth. Even the all-powerful Pointing
+                has no control about the blind texts it is an almost
+                unorthographic life One day however.
+              </p>
+              <div class="ac-center">
+                <a href="" class="btn btn__green">EXPLORE</a>
               </div>
             </div>
-            <div class="column column-md-6 column-sm-12">
-              <div class="classes__item green-filled d-column-center">
-                <div class="classes__item-upper d-column margin-btm-15">
-                  <h3 class="t-sec-title">Hatha Yoga</h3>
-                  <p class="t-caption">Jaquon Hart</p>
-                </div>
-                <div class="classes__item-lower d-flex-wrap jc-space-between">
-                  <div class="vinayasa__price">
-                    <p class="t-content">
-                      ₱<span class="t-sec-title">900</span>/mo
-                    </p>
-                  </div>
-                  <div class="vinayasa__image">
-                    <img
-                      src="./assets/img/classes_img-2.png"
-                      alt=""
-                      class="team"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column column-md-6 column-sm-12">
-              <div class="classes__item olive-filled d-column-center">
-                <div class="classes__item-upper d-column margin-btm-15">
-                  <h3 class="t-sec-title">Meditation</h3>
-                  <p class="t-caption">Winny Rearie</p>
-                </div>
-                <div class="classes__item-lower d-flex-wrap jc-space-between">
-                  <div class="vinayasa__price">
-                    <p class="t-content">
-                      ₱<span class="t-sec-title">1,900</span>/mo
-                    </p>
-                  </div>
-                  <div class="vinayasa__image">
-                    <img
-                      src="./assets/img/classes_img-3.png"
-                      alt=""
-                      class="team"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column column-md-6 column-sm-12">
-              <div class="classes__item brown-filled d-column-center">
-                <div class="classes__item-upper d-column margin-btm-15">
-                  <h3 class="t-sec-title">Ashtanga Yoga</h3>
-                  <p class="t-caption">Yvonne Knight</p>
-                </div>
-                <div class="classes__item-lower d-flex-wrap jc-space-between">
-                  <div class="vinayasa__price">
-                    <p class="t-content">
-                      ₱<span class="t-sec-title">350</span>/mo
-                    </p>
-                  </div>
-                  <div class="vinayasa__image">
-                    <img
-                      src="./assets/img/classes_img-4.png"
-                      alt=""
-                      class="team"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row center">
-            <div class="classes__btn margin-top-50"></div>
-            <a href="" class="btn btn__black-border">ALL CLASSES</a>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="white"></div>
+    </section>
 
-      <section id="discount">
-        <div class="container">
-          <div class="discount__block olive-filled">
-            <div class="discount__item">
-              <div class="discount__item-img symbol nude-filled center">
-                <img src="./assets/img/discount_icon-1.png" alt="" />
+    <section id="classes" class="bg-white">
+      <div class="container">
+        <div class="row center">
+          <div class="classes_title center">
+            <h4 class="menu_link t-menu-link center">OUR CLASSES</h4>
+            <h2 class="t-sec-title margin-btm-45 center">
+              Discover & Register For Our Classes
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column column-md-6 column-sm-12">
+            <div class="classes__item nude-filled d-column-center">
+              <div class="classes__item-upper d-column margin-btm-15">
+                <h3 class="t-sec-title">Vinayasa Yoga</h3>
+                <p class="t-caption">Lia Castro</p>
               </div>
-              <div class="discount__item-text d-column">
-                <h3 class="t-sec-title">Get Discount for All Classes</h3>
-                <p class="t-content">
-                  The sky was cloudless and of a deep dark blue spectacle
-                  before.
-                </p>
+              <div class="classes__item-lower d-flex-wrap jc-space-between">
+                <div class="vinayasa__price">
+                  <p class="t-content">
+                    ₱<span class="t-sec-title">1,200</span>/mo
+                  </p>
+                </div>
+                <div class="vinayasa__image">
+                  <img
+                    src="./assets/img/classes_img-1.png"
+                    alt=""
+                    class="team"
+                  />
+                </div>
               </div>
             </div>
-            <div class="discount__item">
-              <div class="discount__item-btn">
-                <a href="" class="btn btn__green">APPOINTMENT</a>
+          </div>
+          <div class="column column-md-6 column-sm-12">
+            <div class="classes__item green-filled d-column-center">
+              <div class="classes__item-upper d-column margin-btm-15">
+                <h3 class="t-sec-title">Hatha Yoga</h3>
+                <p class="t-caption">Jaquon Hart</p>
+              </div>
+              <div class="classes__item-lower d-flex-wrap jc-space-between">
+                <div class="vinayasa__price">
+                  <p class="t-content">
+                    ₱<span class="t-sec-title">900</span>/mo
+                  </p>
+                </div>
+                <div class="vinayasa__image">
+                  <img
+                    src="./assets/img/classes_img-2.png"
+                    alt=""
+                    class="team"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-md-6 column-sm-12">
+            <div class="classes__item olive-filled d-column-center">
+              <div class="classes__item-upper d-column margin-btm-15">
+                <h3 class="t-sec-title">Meditation</h3>
+                <p class="t-caption">Winny Rearie</p>
+              </div>
+              <div class="classes__item-lower d-flex-wrap jc-space-between">
+                <div class="vinayasa__price">
+                  <p class="t-content">
+                    ₱<span class="t-sec-title">1,900</span>/mo
+                  </p>
+                </div>
+                <div class="vinayasa__image">
+                  <img
+                    src="./assets/img/classes_img-3.png"
+                    alt=""
+                    class="team"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-md-6 column-sm-12">
+            <div class="classes__item brown-filled d-column-center">
+              <div class="classes__item-upper d-column margin-btm-15">
+                <h3 class="t-sec-title">Ashtanga Yoga</h3>
+                <p class="t-caption">Yvonne Knight</p>
+              </div>
+              <div class="classes__item-lower d-flex-wrap jc-space-between">
+                <div class="vinayasa__price">
+                  <p class="t-content">
+                    ₱<span class="t-sec-title">350</span>/mo
+                  </p>
+                </div>
+                <div class="vinayasa__image">
+                  <img
+                    src="./assets/img/classes_img-4.png"
+                    alt=""
+                    class="team"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="row center margin-top-50">
+          <div class="classes__btn"></div>
+          <a href="" class="btn btn__black-border">ALL CLASSES</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="discount" class="p-relative">
+      <div class="container">
+        <div class="discount__block olive-filled">
+          <div class="discount__item">
+            <div class="discount__item-img symbol nude-filled center">
+              <img src="./assets/img/discount_icon-1.png" alt="" />
+            </div>
+            <div class="discount__item-text d-column">
+              <h3 class="t-sec-title">Get Discount for All Classes</h3>
+              <p class="t-content">
+                The sky was cloudless and of a deep dark blue spectacle before.
+              </p>
+            </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__item-btn">
+              <a href="" class="btn btn__green">APPOINTMENT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nude"></div>
+    </section>
     <!-- END OF WHITE FLUID BACKGROUND -->
 
     <section id="media">
@@ -344,8 +347,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="column column-sm-12 p-relative">
-            <div class="training__vid">
+          <div class="column column-md-8">
+            <div class="training__vid training__vid-lg p-relative">
               <img src="./assets/img/vid-2.png" alt="media" class="media" />
               <a href="" class="play-btn btn btn__icon-olive">
                 <i class="fas fa-play"></i>
@@ -354,311 +357,327 @@
               <h4 class="t-text training__class">Ashtanga Yoga</h4>
             </div>
           </div>
-
-          <div class="column column-sm-12 d-column-center">
-            <div class="training__vid">
-              <img src="./assets/img/vid-3.png" alt="media" class="media" />
-              <a href="" class="play-btn btn btn__icon-olive">
-                <i class="fas fa-play"></i>
-              </a>
-              <p class="t-tag training__time">30 min</p>
-              <h4 class="t-text training__class">Hatha Yoga</h4>
+          <div class="column column-md-4">
+            <div class="row">
+              <div class="column">
+                <div class="training__vid margin-btm-30 p-relative">
+                  <img src="./assets/img/vid-3.png" alt="media" class="media" />
+                  <a href="" class="play-btn btn btn__icon-olive">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <p class="t-tag training__time">30 min</p>
+                  <h4 class="t-text training__class">Hatha Yoga</h4>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="column">
-            <div class="">
-              <img src="./assets/img/vid-4.png" alt="media" class="media" />
-              <p class="t-tag training__time">30 min</p>
-              <h4 class="t-text training__class">Vinayasa Yoga</h4>
-              <a href="" class="play-btn btn btn__icon-olive"
-                ><i class="fas fa-play"></i
-              ></a>
+            <div class="row">
+              <div class="column">
+                <div class="training__vid p-relative">
+                  <img src="./assets/img/vid-4.png" alt="media" class="media" />
+                  <a href="" class="play-btn btn btn__icon-olive">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <p class="t-tag training__time">30 min</p>
+                  <h4 class="t-text training__class">Vinayasa Yoga</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row center margin-top-80">
-          <a href="" class="btn btn__black-border">ALL VIDEO</a>
+        <div class="row center">
+          <div class="training__btn margin-top-80">
+            <a href="" class="btn btn__black-border">ALL VIDEO</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- carousel -->
     <section id="instructors">
       <div class="container">
         <div class="row">
-          <div class="instructor_title">
-            <h4 class="menu_link t-menu-link">INSTRUCTORS</h4>
-            <h2 class="t-sec-title">Meet Our Talented Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column column-md-3 column-sm-12">
-            <div class="instructor__block white-filled">
-              <img
-                src="./assets/img/team_img-1.png"
-                alt="Lia"
-                class="instructor__img"
-              />
-              <h4
-                class="instructor__block-name t-text margin-top-20 margin-btm-3"
-              >
-                Lia Castro
-              </h4>
-              <p class="t-content">Ashtanga Yoga</p>
-            </div>
-          </div>
-          <div class="column column-md-3">
-            <div class="instructor__block white-filled">
-              <img
-                src="./assets/img/team_img-2.png"
-                alt="Jaquon"
-                class="instructor__img"
-              />
-              <h4
-                class="instructor__block-name t-text margin-top-20 margin-btm-3"
-              >
-                Jaquon Hart
-              </h4>
-              <p class="t-content">Hatha Yoga</p>
-            </div>
-          </div>
-          <div class="column column-md-3">
-            <div class="instructor__block white-filled">
-              <img
-                src="./assets/img/team_img-3.png"
-                alt="Winny"
-                class="instructor__img"
-              />
-              <h4
-                class="instructor__block-name t-text margin-top-20 margin-btm-3"
-              >
-                Winny Rearie
-              </h4>
-              <p class="t-content">Vinayasa Yoga</p>
-            </div>
-          </div>
-          <div class="column column-md-3">
-            <div class="instructor__block white-filled">
-              <img
-                src="./assets/img/team_img-4.png"
-                alt="Yvonne"
-                class="instructor__img"
-              />
-              <h4
-                class="instructor__block-name t-text margin-top-20 margin-btm-3"
-              >
-                Yvonne Knight
-              </h4>
-              <p class="t-content">Meditation</p>
+          <div class="column">
+            <div class="instructor_title">
+              <h4 class="menu_link t-menu-link">INSTRUCTORS</h4>
+              <h2 class="t-sec-title">Meet Our Talented Team</h2>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="ellipsis">. . .</div>
+          <div class="column">
+            <div class="carousel">
+              <!-- add 2 more carousel -->
+              <div class="carousel__item instructor__block white-filled">
+                <img
+                  src="./assets/img/team_img-1.png"
+                  alt="Lia"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Lia Castro
+                </h4>
+                <p class="t-content">Ashtanga Yoga</p>
+              </div>
+
+              <div class="carousel__item instructor__block white-filled">
+                <img
+                  src="./assets/img/team_img-2.png"
+                  alt="Jaquon"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Jaquon Hart
+                </h4>
+                <p class="t-content">Hatha Yoga</p>
+              </div>
+
+              <div class="carousel__item instructor__block white-filled">
+                <img
+                  src="./assets/img/team_img-3.png"
+                  alt="Winny"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Winny Rearie
+                </h4>
+                <p class="t-content">Vinayasa Yoga</p>
+              </div>
+
+              <div class="carousel__item instructor__block white-filled">
+                <img
+                  src="./assets/img/team_img-4.png"
+                  alt="Yvonne"
+                  class="instructor__img"
+                />
+                <h4
+                  class="
+                    instructor__block-name
+                    t-text
+                    margin-top-20 margin-btm-3
+                  "
+                >
+                  Yvonne Knight
+                </h4>
+                <p class="t-content">Meditation</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- START OF WHITE FLUID BACKGROUND -->
-    <div class="container-fluid fluid-bg">
-      <section id="hiring">
-        <div class="container">
-          <div class="hiring__block olive-filled">
-            <div class="hiring__item">
-              <div class="hiring__item-img symbol white-filled center">
-                <img src="./assets/img/hiring.png" alt="hiring" />
-              </div>
-              <div class="hiring__item-text d-column">
-                <h3 class="t-sec-title">We are Hiring!</h3>
-                <p class="t-content">
-                  The sky was cloudless and of a deep dark blue spectacle
-                  before.
+    <section id="hiring" class="p-relative">
+      <div class="container">
+        <div class="hiring__block olive-filled">
+          <div class="hiring__item">
+            <div class="hiring__item-img symbol white-filled center">
+              <img src="./assets/img/hiring.png" alt="hiring" />
+            </div>
+            <div class="hiring__item-text d-column">
+              <h3 class="t-sec-title">We are Hiring!</h3>
+              <p class="t-content">
+                The sky was cloudless and of a deep dark blue spectacle before.
+              </p>
+            </div>
+          </div>
+          <div class="hiring__item">
+            <div class="hiring__item-btn">
+              <a href="" class="btn btn__nude">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white"></div>
+    </section>
+
+    <section id="testimonials" class="bg-white">
+      <div class="container">
+        <div class="row center">
+          <div class="testimonial_title">
+            <h4 class="menu_link t-menu-link">TESTIMONIALS</h4>
+            <h2 class="t-sec-title">What Our Clients Say About Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column column-lg-6 column-md-9 column-sm-12">
+            <div class="testimonial__block brown-filled">
+              <img src="/assets/img/quote.png" alt="quote" class="quote" />
+              <div class="testimonial__text margin-btm-10">
+                <p class="t-caption testimonials__text-quote">
+                  "It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth. Even the all-powerful Pointing
+                  has no control about the blind texts it is an almost
+                  unorthographic life One day however a small line of blind
+                  text."
                 </p>
               </div>
+              <div class="testimonial__pers d-flex-wrap">
+                <div class="testimonial__pers-image margin-right-25 d-flex">
+                  <img
+                    src="./assets/img/testimonilas.png"
+                    alt="testimonial__img"
+                  />
+                </div>
+                <div class="testimonial__pers-name d-column">
+                  <h4 class="t-tag">Elsi Hansdottir</h4>
+                  <p class="t-content">Meditation</p>
+                </div>
+              </div>
             </div>
-            <div class="hiring__item">
-              <div class="hiring__item-btn">
-                <a href="" class="btn btn__nude">CONTACT US</a>
+          </div>
+
+          <div class="column column-lg-6 column-md-9 column-sm-12">
+            <div class="testimonial__block brown-filled">
+              <img src="/assets/img/quote.png" alt="quote" class="quote" />
+              <div class="testimonial__text margin-btm-10">
+                <p class="t-caption testimonials__text-quote">
+                  "Which roasted parts of sentences fly into your mouth. Even
+                  the all-powerful Pointing has no control about the blind texts
+                  it is an almost unorthographic life One day however a small
+                  line of blind text by the name."
+                </p>
+              </div>
+              <div class="testimonial__pers d-flex">
+                <div class="testimonial__pers-image margin-right-25 d-flex">
+                  <img
+                    src="./assets/img/testimonilas.png"
+                    alt="testimonial__img"
+                  />
+                </div>
+                <div class="testimonial__pers-name d-column">
+                  <h4 class="t-tag">Stephanie Bailey</h4>
+                  <p class="t-content">Ashtanga Yoga</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="testimonials">
-        <div class="container">
-          <div class="row center">
-            <div class="testimonial_title">
-              <h4 class="menu_link t-menu-link">TESTIMONIALS</h4>
-              <h2 class="t-sec-title">What Our Clients Say About Us</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column column-lg-6 column-md-9 column-sm-12">
-              <div class="testimonial__block brown-filled">
-                <img src="/assets/img/quote.png" alt="quote" class="quote" />
-                <div class="testimonial__text margin-btm-10">
-                  <p class="t-caption testimonials__text-quote">
-                    "It is a paradisematic country, in which roasted parts of
-                    sentences fly into your mouth. Even the all-powerful
-                    Pointing has no control about the blind texts it is an
-                    almost unorthographic life One day however a small line of
-                    blind text."
-                  </p>
-                </div>
-                <div class="testimonial__pers d-flex-wrap">
-                  <div class="testimonial__pers-image margin-right-25 d-flex">
-                    <img
-                      src="./assets/img/testimonilas.png"
-                      alt="testimonial__img"
-                    />
-                  </div>
-                  <div class="testimonial__pers-name d-column">
-                    <h4 class="t-tag">Elsi Hansdottir</h4>
-                    <p class="t-content">Meditation</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="column column-lg-6 column-md-9 column-sm-12">
-              <div class="testimonial__block brown-filled">
-                <img src="/assets/img/quote.png" alt="quote" class="quote" />
-                <div class="testimonial__text margin-btm-10">
-                  <p class="t-caption testimonials__text-quote">
-                    "Which roasted parts of sentences fly into your mouth. Even
-                    the all-powerful Pointing has no control about the blind
-                    texts it is an almost unorthographic life One day however a
-                    small line of blind text by the name."
-                  </p>
-                </div>
-                <div class="testimonial__pers d-flex">
-                  <div class="testimonial__pers-image margin-right-25 d-flex">
-                    <img
-                      src="./assets/img/testimonilas.png"
-                      alt="testimonial__img"
-                    />
-                  </div>
-                  <div class="testimonial__pers-name d-column">
-                    <h4 class="t-tag">Stephanie Bailey</h4>
-                    <p class="t-content">Ashtanga Yoga</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row center">
-            <div class="testimonial__btn margin-top-65">
-              <a href="" class="btn btn__black-border">LOAD MORE</a>
-            </div>
+        <div class="row center">
+          <div class="testimonial__btn margin-top-65">
+            <a href="" class="btn btn__black-border">LOAD MORE</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="blog">
-        <div class="container">
-          <div class="row">
+    <section id="blog" class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="column">
             <div class="blog_title d-column">
               <h4 class="menu_link t-menu-link">OUR BLOG</h4>
               <h2 class="t-sec-title">Latest Articles About Yoga</h2>
             </div>
           </div>
-          <div class="row center">
-            <div class="column column-lg-4 column-md-8 column-sm-12">
-              <div class="blog__block d-column">
-                <img src="./assets/img/blog-1.png" alt="blog" class="blog" />
-                <p
-                  class="t-content blog__block-date margin-top-20 margin-btm-15"
-                >
-                  29 Sep 2020
-                </p>
-                <h4 class="t-text blog__block-title margin-btm-15">
-                  Far far away, behind the word mountain
-                </h4>
-                <a class="t-content blog__block-more">Read more</a>
-              </div>
-            </div>
-            <div class="column column-lg-4 column-md-8 column-sm-12">
-              <div class="blog__block d-column">
-                <img src="./assets/img/blog-2.png" alt="blog" class="blog" />
-                <p
-                  class="t-content blog__block-date margin-top-20 margin-btm-15"
-                >
-                  27 Sep 2020
-                </p>
-                <h4 class="t-text blog__block-title margin-btm-15">
-                  Countries, there live the blind texts
-                </h4>
-                <a class="t-content blog__block-more">Read more</a>
-              </div>
-            </div>
-            <div class="column column-lg-4 column-md-8 column-sm-12">
-              <div class="blog__block d-column">
-                <img src="./assets/img/blog-3.png" alt="blog" class="blog" />
-                <p
-                  class="t-content blog__block-date margin-top-20 margin-btm-15"
-                >
-                  25 Sep 2020
-                </p>
-                <h4 class="t-text blog__block-title margin-btm-15">
-                  Separated they live in right at the coast
-                </h4>
-                <a class="t-content blog__block-more">Read more</a>
-              </div>
+        </div>
+        <div class="row center">
+          <div class="column column-lg-4 column-md-8 column-sm-12">
+            <div class="blog__block d-column">
+              <img src="./assets/img/blog-1.png" alt="blog" class="blog" />
+              <p class="t-content blog__block-date margin-top-20 margin-btm-15">
+                29 Sep 2020
+              </p>
+              <h4 class="t-text blog__block-title margin-btm-15">
+                Far far away, behind the word mountain
+              </h4>
+              <a class="t-content blog__block-more">Read more</a>
             </div>
           </div>
-          <div class="row center">
-            <div class="blog_btn">
-              <a href="" class="btn btn__black-border">SEE MORE</a>
+          <div class="column column-lg-4 column-md-8 column-sm-12">
+            <div class="blog__block d-column">
+              <img src="./assets/img/blog-2.png" alt="blog" class="blog" />
+              <p class="t-content blog__block-date margin-top-20 margin-btm-15">
+                27 Sep 2020
+              </p>
+              <h4 class="t-text blog__block-title margin-btm-15">
+                Countries, there live the blind texts
+              </h4>
+              <a class="t-content blog__block-more">Read more</a>
+            </div>
+          </div>
+          <div class="column column-lg-4 column-md-8 column-sm-12">
+            <div class="blog__block d-column">
+              <img src="./assets/img/blog-3.png" alt="blog" class="blog" />
+              <p class="t-content blog__block-date margin-top-20 margin-btm-15">
+                25 Sep 2020
+              </p>
+              <h4 class="t-text blog__block-title margin-btm-15">
+                Separated they live in right at the coast
+              </h4>
+              <a class="t-content blog__block-more">Read more</a>
             </div>
           </div>
         </div>
-      </section>
+        <div class="row center">
+          <div class="blog_btn">
+            <a href="" class="btn btn__black-border">SEE MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <div class="container contact__block">
-          <div class="row">
-            <div class="column column-md-6 column-sm-12">
-              <img
-                src="./assets/img/background-2.png"
-                alt="woman"
-                class="contact"
-              />
+    <section id="contact" class="p-relative">
+      <div class="container contact__block">
+        <div class="row">
+          <div class="column column-md-6 column-sm-12">
+            <img
+              src="./assets/img/background-2.png"
+              alt="woman"
+              class="contact"
+            />
+          </div>
+          <div class="column column-md-6 column-sm-12 ac-center">
+            <div class="row">
+              <div class="contact__title d-column">
+                <h3 class="t-sec-title margin-btm-15">Contact Us!</h3>
+                <p class="t-content margin-btm-30">Everyday 8:00 - 20:00</p>
+              </div>
             </div>
-            <div class="column column-md-6 column-sm-12 ac-center">
-              <div class="row">
-                <div class="contact__title d-column">
-                  <h3 class="t-sec-title margin-btm-15">Contact Us!</h3>
-                  <p class="t-content margin-btm-30">Everyday 8:00 - 20:00</p>
+            <div class="row margin-btm-15 d-column">
+              <div class="d-flex">
+                <div href="" class="contact__icon icon-sm">
+                  <img src="./assets/img/contact-1.png" alt="address" />
                 </div>
+                <p class="t-caption center">
+                  7767 Clark Drive Shelton, CT 06484
+                </p>
               </div>
-              <div class="row margin-btm-15 d-column">
-                <div class="d-flex">
-                  <div href="" class="contact__icon icon-sm">
-                    <img src="./assets/img/contact-1.png" alt="address" />
-                  </div>
-                  <p class="t-caption center">
-                    7767 Clark Drive Shelton, CT 06484
-                  </p>
+              <div class="d-flex margin-btm-45">
+                <div href="" class="contact__icon icon-sm">
+                  <img src="./assets/img/contact-2.png" alt="" />
                 </div>
-                <div class="d-flex margin-btm-45">
-                  <div href="" class="contact__icon icon-sm">
-                    <img src="./assets/img/contact-2.png" alt="" />
-                  </div>
-                  <p class="t-caption center">+1 (234) 567-89-01</p>
-                </div>
+                <p class="t-caption center">+1 (234) 567-89-01</p>
               </div>
-              <div class="row">
-                <div class="contact__btn">
-                  <a href="" class="btn btn__yellow">CONTACT US</a>
-                </div>
+            </div>
+            <div class="row">
+              <div class="contact__btn">
+                <a href="" class="btn btn__yellow">CONTACT US</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+      <div class="nude"></div>
+    </section>
 
     <footer id="footer">
       <div class="container">
@@ -696,8 +715,8 @@
                 <a>Ashtanga</a>
               </li>
               <li href="#classes__hatha" class="t-content"><a>Hatha</a></li>
-              <li href="#classes__vinayana" class="t-content">
-                <a>Vinayana</a>
+              <li href="#classes__vinayasa" class="t-content">
+                <a>Vinayasa</a>
               </li>
               <li href="#classes__meditation" class="t-content">
                 <a>Meditation</a>
@@ -733,6 +752,9 @@
       </div>
     </footer>
 
+    <!-- smooth scroll -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script>
       window.onscroll = () => {
         const navbar = document.querySelector("#navbar");
@@ -740,6 +762,12 @@
         if (this.scrollY <= 80) navbar.className = "";
         else navbar.className = "navbar--scroll";
       };
+
+      var flkty = new Flickity(".carousel", {
+        freeScroll: true,
+        wrapAround: true,
+      });
     </script>
+    <!-- carousel cards library -->
   </body>
 </html>
