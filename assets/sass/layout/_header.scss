@@ -1,6 +1,6 @@
 // HERO SECTION
 #hero {
-  background: url(./../img/background.png) no-repeat center center fixed;
+  background: url(.././img/hero-bg.jpg) no-repeat center center fixed;
   height: 880px;
   width: 100%;
   background-size: cover;
@@ -26,6 +26,14 @@
   max-width: 340px;
   align-self: center;
   text-align: center;
+
+  h2 {
+    color: $COLOR_WHITE;
+  }
+
+  h3 {
+    color: $COLOR_WHITE;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +58,6 @@
   }
 
   .hero__image img {
-    max-width: 450px;
+    max-width: 500px;
   }
 }

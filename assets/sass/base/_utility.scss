@@ -167,11 +167,10 @@
 }
 
 // boxes and borders
-.white-filled-outline {
-  background: $COLOR_WHITE;
-  border: 5px solid $COLOR_WHITE;
+.light-gray-filled-outline {
+  background-color: $COLOR_LIGHT_GRAY;
   border-radius: 32px;
-  outline: 2px solid $COLOR_WHITE;
+  outline: 2px solid $COLOR_LIGHT_GRAY;
   outline-offset: 24px;
   box-shadow: 0 16px 32px 0 $COLOR_TEXT_50;
   padding: 64px 27px;
@@ -182,26 +181,49 @@
   border-radius: 32px;
 }
 
-.nude-filled {
-  background: $COLOR_NUDE;
+.light-gray-filled {
+  background: $COLOR_LIGHT_GRAY;
   border-radius: 32px;
 }
+
+.dark-gray-filled {
+  background: $COLOR_DARK_GRAY;
+  border-radius: 32px;
+}
+
+.blue-filled {
+  background: $COLOR_BLUE;
+  border-radius: 32px;
+}
+
+.yellow-filled {
+  background: $COLOR_YELLOW;
+  border-radius: 32px;
+}
+
 .green-filled {
   background: $COLOR_GREEN;
   border-radius: 32px;
 }
-.olive-filled {
-  background: $COLOR_OLIVE;
+
+.light-green-filled {
+  background: $COLOR_LIGHT_GREEN;
   border-radius: 32px;
 }
-.brown-filled {
-  background: $COLOR_BROWN;
+
+.pink-filled {
+  background: $COLOR_PINK;
+  border-radius: 32px;
+}
+
+.light-pink-filled {
+  background: $COLOR_LIGHT_PINK;
   border-radius: 32px;
 }
 
 // typography
 .menu_link {
-  color: $COLOR_YELLOW;
+  color: $COLOR_PINK;
   font-family: $SECOND_FONT;
   margin-bottom: 17px;
 }

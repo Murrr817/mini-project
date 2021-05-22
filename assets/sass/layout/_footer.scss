@@ -8,15 +8,17 @@
 }
 
 .contact__block {
-  background: url(.././img/background.png);
+  background: url(.././img/contact.jpg) center top;
+  background-size: cover;
   border-radius: 32px;
   padding: 28px;
 }
 
 // footer
 .logo {
-  color: $COLOR_WHITE;
-  text-shadow: 2px 2px $COLOR_TEXT_50;
+  font-family: "Lobster", cursive;
+  color: $COLOR_PINK;
+  text-shadow: 2px 2px $COLOR_LIGHT_GRAY;
 }
 
 #footer {
@@ -26,7 +28,7 @@
 .lower-footer {
   padding-top: 60px;
   padding-bottom: 55px;
-  border-top: 1px solid $COLOR_TEXT_50;
+  border-top: 1px solid $COLOR_LIGHT_GRAY;
   display: flex;
   flex-direction: column;
 }
@@ -48,6 +50,7 @@
   max-width: 195px;
   text-align: center;
   align-self: center;
+  color: $COLOR_LIGHT_GRAY;
 }
 
 .lower-footer__terms {
@@ -57,7 +60,7 @@
 }
 
 .lower-footer a {
-  color: $COLOR_TEXT;
+  color: $COLOR_WHITE;
 }
 
 .lower-footer__privacy {

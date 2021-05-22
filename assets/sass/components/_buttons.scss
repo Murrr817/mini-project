@@ -15,24 +15,24 @@ i {
   font-weight: 700;
 
   // button colors
-  &.btn__yellow {
-    background: $COLOR_YELLOW;
-    border: 2px solid $COLOR_YELLOW;
+  &.btn__blue {
+    background: $COLOR_BLUE;
+    border: 2px solid $COLOR_BLUE;
   }
 
-  &.btn__green {
-    background: $COLOR_GREEN;
-    border: 2px solid $COLOR_GREEN;
+  &.btn__dark-gray {
+    background: $COLOR_DARK_GRAY;
+    border: 2px solid $COLOR_DARK_GRAY;
   }
 
-  &.btn__olive {
-    background: $COLOR_OLIVE;
-    border: 2px solid $COLOR_OLIVE;
+  &.btn__pink {
+    background: $COLOR_PINK;
+    border: 2px solid $COLOR_PINK;
   }
 
-  &.btn__nude {
-    background: $COLOR_NUDE;
-    border: 2px solid $COLOR_NUDE;
+  &.btn__light-pink {
+    background: $COLOR_LIGHT_PINK;
+    border: 2px solid $COLOR_LIGHT_PINK;
   }
 
   &.btn__black-border {
@@ -41,10 +41,16 @@ i {
     border: 2px solid $COLOR_TEXT;
   }
 
+  &.btn__light-gray-border {
+    background: transparent;
+    color: $COLOR_LIGHT_GRAY;
+    border: 2px solid $COLOR_LIGHT_GRAY;
+  }
+
   // icons
   &.btn__icon-only {
-    background: $COLOR_BROWN;
-    border: 2px solid $COLOR_BROWN;
+    background: $COLOR_PINK;
+    border: 2px solid $COLOR_PINK;
     padding: 15px;
     border-radius: 50%;
     color: $COLOR_WHITE;
@@ -52,12 +58,34 @@ i {
     height: 48px;
   }
 
-  &.btn__icon-olive {
-    background: $COLOR_OLIVE;
-    border: 2px solid $COLOR_OLIVE;
+  &.btn__icon-pink {
+    background: $COLOR_PINK;
     padding: 30px;
     border-radius: 50%;
     color: $COLOR_WHITE;
+    height: 84px;
+    width: 84px;
+    text-align: center;
+
+    i {
+      line-height: 25px;
+    }
+  }
+
+  &.btn__icon-light-pink {
+    background: $COLOR_LIGHT_PINK;
+    padding: 30px;
+    border-radius: 50%;
+    color: $COLOR_WHITE;
+    height: 84px;
+    width: 84px;
+    opacity: 0.85;
+
+    i {
+      width: 25px;
+      line-height: 25px;
+      text-align: center;
+    }
   }
 
   &.btn__medium {
@@ -67,37 +95,39 @@ i {
   }
 }
 
-.btn__icon-olive i {
-  line-height: 20px;
-}
-
 // HOVER
-.btn__yellow:hover {
-  background: $COLOR_YELLOW;
-  border: 2px solid $COLOR_TEXT_50;
-  color: $COLOR_TEXT_50;
+.btn__blue:hover {
+  background: $COLOR_BLUE;
+  border: 2px solid $COLOR_LIGHT_GRAY;
+  color: $COLOR_LIGHT_GRAY;
 }
 
-.btn__green:hover {
-  background: $COLOR_WHITE;
-  border: 2px solid $COLOR_GREEN;
-  color: $COLOR_GREEN;
+.btn__dark-gray:hover {
+  background: $COLOR_BLUE;
+  border: 2px solid $COLOR_DARK_GRAY;
+  color: $COLOR_DARK_GRAY;
 }
 
-.btn__olive:hover {
-  background: transparent;
-  border: 2px solid $COLOR_OLIVE;
-  color: $COLOR_OLIVE;
+.btn__pink:hover {
+  background: $COLOR_LIGHT_PINK;
+  border: 2px solid $COLOR_PINK;
+  color: $COLOR_PINK;
 }
 
-.btn__nude:hover {
-  background: transparent;
-  border: 2px solid $COLOR_NUDE;
-  color: $COLOR_NUDE;
+.btn__light-pink:hover {
+  background: $COLOR_PINK;
+  border: 2px solid $COLOR_LIGHT_PINK;
+  color: $COLOR_LIGHT_PINK;
 }
 
 .btn__black-border:hover {
   background: $COLOR_TEXT_50;
   color: $COLOR_WHITE;
   border: 2px solid $COLOR_TEXT_50;
+}
+
+.btn__light-gray-border:hover {
+  background: $COLOR_DARK_GRAY;
+  color: $COLOR_LIGHT_GRAY;
+  border: 2px solid $COLOR_LIGHT_GRAY;
 }

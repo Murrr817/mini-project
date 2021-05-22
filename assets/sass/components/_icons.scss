@@ -1,6 +1,6 @@
 // SHOWCASE
 .icon {
-  background: $COLOR_OLIVE;
+  background: $COLOR_LIGHT_PINK;
   min-width: 128px;
   min-height: 128px;
   justify-content: center;
@@ -32,12 +32,6 @@
   max-height: 48px;
 }
 
-// TRAINING
-.training__vid i {
-  width: 25px;
-  height: 20px;
-}
-
 // TESTIMONIALS
 .quote {
   position: absolute;
@@ -49,7 +43,7 @@
 
 // CONTACT
 .icon-sm {
-  background: $COLOR_OLIVE;
+  background: $COLOR_BLUE;
   width: 64px;
   height: 64px;
   display: flex;
